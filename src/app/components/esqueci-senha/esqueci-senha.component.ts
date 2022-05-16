@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-esqueci-senha',
@@ -10,6 +11,10 @@ export class EsqueciSenhaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  enviarEmail(){
+    alert('Novo senha enviada com sucesso!')
   }
 
 }

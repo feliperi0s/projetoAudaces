@@ -1,0 +1,26 @@
+<h1>Home</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-sm-3">
+          <app-nav></app-nav>
+        </div>
+        <div class="col-6 col-sm-3" class="dentro" >
+            <p>Bem vindo, Felipe</p>
+            <p>Acompanhe a visão geral de suas coleções</p>
+            <div class=row>
+                <div class="col-3 col-sm-3">
+                        <p>Coleções</p>
+                    <p *ngFor="let colecoes of colecao$ |async">{{colecoes.id+colecoes.id}}</p>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <p>Modelos</p>
+                    <p></p>
+                </div>
+                <div class="col-3 col-sm-3">
+                    <p>Orçamento Medio por coleção</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>    
+        </div>
+    </div>

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-3">
+      <app-nav></app-nav>
+    </div>
+    <div class="col">
+      <div class="card-header">
+          <div class="float-right">
+              <button [routerLink]="['/novaColecao']">Criar Coleção</button>
+          </div>
+      </div>
+      
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ColecaoID</th>
+              <th scope="col">Nome da Colecao</th>
+              <th scope="col">Estacao e Lançamento</th>
+              <th scope="col">Responsavel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let colecoes of colecao$ |async">
+              <th scope="row">{{colecoes.id}}</th>
+              <td>{{colecoes.nome}}</td>
+              <td>{{colecoes.estacao}}-{{colecoes.anoLancamento}}</td>
+              <td>{{colecoes.responsavel}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>

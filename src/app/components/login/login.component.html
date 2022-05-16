@@ -1,1 +1,25 @@
-<p>login works!</p>
+<form>
+    <div class="position-absolute top-50 start-50 translate-middle" id="login">
+        <div class="d-flex justify-content-center" >
+            <img src="../../../assets/images/Fill-51.png" alt="">
+            </div>
+        <div class="d-flex justify-content-center" >
+            <p id="sign">Sign In</p>
+            </div>
+            <div class="d-flex justify-content-center" >
+                <p id="text">Insira as suas credencias para acessar sua conta</p>
+                </div>
+        <div class="d-flex justify-content-center" >
+          <input type="email"  formControlName="login" placeholder="Informe seu e-mail">
+        </div>
+        <div class="d-flex justify-content-center">
+          <input type="password" formControlName="senha" placeholder="Informe sua senha">
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary" [routerLink]="['home']">Entrar</button>
+        </div>
+        <div class="d-flex justify-content-center" >
+            <p id="text">Esqueceu sua Senha? <a href="" [routerLink]="['esqueciSenha']">Redefinir senha</a></p>
+            </div>
+    </div>
+</form>

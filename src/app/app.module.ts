@@ -5,16 +5,32 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { EsqueciSenhaComponent } from './components/esqueci-senha/esqueci-senha.component';
+import { ColecaoComponent } from './components/colecao/colecao.component';
+import { ModelosComponent } from './components/modelos/modelos.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ColecaoFormComponent } from './components/colecao-form/colecao-form.component';
+import { ModelosFormComponent } from './components/modelos-form/modelos-form.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    EsqueciSenhaComponent
+    EsqueciSenhaComponent,
+    ColecaoComponent,
+    ModelosComponent,
+    ColecaoFormComponent,
+    ModelosFormComponent,
+    HomeComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

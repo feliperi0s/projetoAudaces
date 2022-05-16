@@ -1,0 +1,42 @@
+{
+  "modelos": [
+    {
+      "id": 1,
+      "nome": "Modelo 1",
+      "colecao": "Coleção 1",
+      "responsavel":"Felipe",
+      "tipo":"tenis",
+      "bordado":true,
+      "estampado":false
+    },
+    {
+      "id": 2,
+      "nome": "Modelo 2",
+      "colecao": "Coleção 2",
+      "responsavel":"Thiago",
+      "tipo":"tenis",
+      "bordado":true,
+      "estampado":false
+    }
+  ],
+  "colecoes": [
+    {
+      "id": 1,
+      "nome": "Coleção 1",
+      "estacao":"Verão",
+      "responsavel":"Felipe",
+      "marca":"nike",
+      "anoLancamento": 2022,
+      "orcamento": 20.000
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2",
+      "estacao":"inverno",
+      "responsavel":"Thiago",
+      "marca":"Adidas",
+      "anoLancamento": 2022,
+      "orcamento": 35.000
+    }
+  ]
+}

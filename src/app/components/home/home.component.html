@@ -5,20 +5,28 @@
           <app-nav></app-nav>
         </div>
         <div class="col-6 col-sm-3" class="dentro" >
-            <p>Bem vindo, Felipe</p>
-            <p>Acompanhe a visão geral de suas coleções</p>
+            <div class="textoPrincipal">
+                <p>Bem vindo, <strong>Felipe</strong> </p>
+                <p>Acompanhe a visão geral de suas coleções</p>
+            </div>
             <div class=row>
-                <div class="col-3 col-sm-3">
+                <div class="col">
+                    <div class='quadrado'>
                         <p>Coleções</p>
-                    <p *ngFor="let colecoes of colecao$ |async">{{colecoes.id+colecoes.id}}</p>
+                        <p>2</p>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3">
+                <div class="col">
+                    <div class='quadrado'>
                     <p>Modelos</p>
-                    <p></p>
+                    <p>2</p>
+                    </div>
                 </div>
-                <div class="col-3 col-sm-3">
+                <div class="col">
+                    <div class='quadrado'>
                     <p>Orçamento Medio por coleção</p>
-                    <p></p>
+                    <p>R$2400,00</p>
+                </div>
                 </div>
             </div>
         </div>    

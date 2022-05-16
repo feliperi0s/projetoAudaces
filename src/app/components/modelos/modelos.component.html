@@ -1,26 +1,33 @@
-<p>modelos works!</p>
-
-<div class="card-header">
-    <div class="float-right">
-        <button [routerLink]="['novaColecao']" >Nova coleção</button>
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-3">
+      <app-nav></app-nav>
     </div>
+    <div class="col">
+      <div class="card-header">
+          <div class="float-right">
+              <button [routerLink]="['/novomodelo']" >Nova coleção</button>
+          </div>
+      </div>
+      
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ModeloID</th>
+              <th scope="col">Nome do Modelo</th>
+              <th scope="col">Coleção</th>
+              <th scope="col">Responsavel</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let modelo of modelos$ | async">
+                  <th scope="row">{{modelo.id}}</th>
+                  <td>{{modelo.nome}}</td>
+                  <td>{{modelo.colecao}}</td>
+                  <td>{{modelo.responsavel}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
 </div>
-
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">ModeloID</th>
-        <th scope="col">Nome do Modelo</th>
-        <th scope="col">Coleção</th>
-        <th scope="col">Responsavel</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let modelo of modelos$ | async">
-            <th scope="row">{{modelo.id}}</th>
-            <td>{{modelo.nome}}</td>
-            <td>{{modelo.colecao}}</td>
-            <td>{{modelo.responsavel}}</td>
-      </tr>
-    </tbody>
-  </table>

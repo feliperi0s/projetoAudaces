@@ -1,7 +1,5 @@
-import { ColecaoComponent } from './../colecao/colecao.component';
-import { Colecao } from './../../_interfaces/colecao';
+import { ModelosService } from './../../_servicos/modelos.service';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ColecaoService } from 'src/app/_servicos/colecao.service';
 
 @Component({
@@ -11,16 +9,37 @@ import { ColecaoService } from 'src/app/_servicos/colecao.service';
 })
 export class HomeComponent implements OnInit {
 
-  public colecao$!:Observable<Colecao[]>
-  public person:Colecao[] = []
-  public tamanho = ''
-  public verdadeiro = false
+  public somaColecao!:Number
+  public somaModelo!:Number
+  public mediaColecao!:number
+  public stringMedia!:string
 
-  constructor(private _colecaoService:ColecaoService) {}
+
+  constructor(private _colecaoService:ColecaoService,private _modeloService:ModelosService) {}
 
   ngOnInit(): void {
-    this.colecao$ = this._colecaoService.getColecao()
+    this._colecaoService.getColecao().subscribe(
+      retorno => {
+        this.somaColecao = retorno.length
+      }
+    )
+
+    this._colecaoService.getColecao().subscribe(
+      retorno => {
+        this.mediaColecao = retorno.map((item) => item.orcamento).reduce((a,b) => a+b)
+        this.mediaColecao = this.mediaColecao / retorno.length
+        this.stringMedia = Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(this.mediaColecao)
+      }
+    )
+
+    this._modeloService.getModelos().subscribe(
+      retorno => {
+        this.somaModelo = retorno.length
+      }
+    )
+
   }
 
+  
 
 }

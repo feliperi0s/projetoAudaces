@@ -6,12 +6,13 @@
     </div>
     <div class="col">
       <div class="card-header">
-          <div class="float-right">
-              <button [routerLink]="['/novomodelo']" >Nova coleção</button>
+          <div  class="d-flex justify-content-between">
+            <div class="p-2 bd-highlight">Modelos</div>
+              <button class="btn btn-primary me-md-2" type="button" [routerLink]="['/novoModelo']" >Criar Modelo</button>
           </div>
       </div>
       
-      <table class="table">
+      <table class="table table-hover">
           <thead>
             <tr>
               <th scope="col">ModeloID</th>
@@ -22,11 +23,11 @@
           </thead>
           <tbody>
               <tr *ngFor="let modelo of modelos$ | async">
-                  <th scope="row">{{modelo.id}}</th>
-                  <td>{{modelo.nome}}</td>
-                  <td>{{modelo.colecao}}</td>
-                  <td>{{modelo.responsavel}}</td>
-            </tr>
+                    <td>{{modelo.id}}</td>
+                    <td>{{modelo.nome}}</td>
+                    <td>{{modelo.colecao}}</td>
+                    <td>{{modelo.responsavel}}</td>
+                </tr>
           </tbody>
         </table>
     </div>

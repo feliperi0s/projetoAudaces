@@ -23,4 +23,8 @@ export class ColecaoFormComponent implements OnInit {
     })
   }
 
+  public onSubmit(){
+    console.log(this.form.value)
+  }
+
 }

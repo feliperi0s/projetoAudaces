@@ -2,7 +2,7 @@ import { Modelos } from './../_interfaces/modelos';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Observable } from 'rxjs';
+import { Observable, take } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,10 @@ export class ModelosService {
 
   public getModelos():Observable<Modelos[]> {
     return this._http.get<Modelos[]>(this.API);
+  }
+
+  public postModelos(modelo:Modelos){
+    return this._http.post(this.API, modelo).pipe(take(1));
   }
 
 }

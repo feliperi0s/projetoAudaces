@@ -19,22 +19,77 @@
       "estampado": false
     },
     {
-      "nome": "dasdas",
-      "responsavel": "asdsadas",
-      "tipo": "bermuda",
-      "colecao": "inverno",
+      "id": 3,
+      "nome": "Modelo 224",
+      "responsavel": "Thiago",
+      "tipo": "tenis",
+      "colecao": "Coleção 2",
       "bordado": true,
-      "estampa": true,
-      "id": 3
+      "estampa": null,
+      "bordadoNao": null,
+      "estampaNao": null
     },
     {
-      "nome": "sdsd",
-      "responsavel": "dsdsds",
+      "nome": "Modelo 23",
+      "responsavel": "Thiago",
+      "tipo": "tenis",
+      "colecao": "Coleção 2",
+      "bordado": true,
+      "estampa": null,
+      "id": 4
+    },
+    {
+      "nome": "Modelo 25",
+      "responsavel": "Thiago",
+      "tipo": "tenis",
+      "colecao": "Coleção 2",
+      "bordado": true,
+      "estampa": null,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "nome": "Modelo 27",
+      "responsavel": "Thiago",
       "tipo": "bermuda",
       "colecao": "inverno",
+      "bordado": false,
+      "estampa": false,
+      "bordadoNao": true,
+      "estampaNao": true
+    },
+    {
+      "id": 7,
+      "nome": "Modelo 27",
+      "responsavel": "Thiago",
+      "tipo": "bermuda",
+      "colecao": "Coleção 3",
+      "bordado": true,
+      "estampa": null,
+      "bordadoNao": null,
+      "estampaNao": null
+    },
+    {
+      "id": 8,
+      "nome": "sasas",
+      "responsavel": "ssss",
+      "tipo": "bermuda",
+      "colecao": "Coleção 2",
+      "bordado": null,
+      "estampa": null,
+      "bordadoNao": null,
+      "estampaNao": null
+    },
+    {
+      "id": 9,
+      "nome": "sasa",
+      "responsavel": "sasasa",
+      "tipo": "bermuda",
+      "colecao": "Coleção 1",
       "bordado": true,
       "estampa": true,
-      "id": 4
+      "bordadoNao": null,
+      "estampaNao": null
     }
   ],
   "colecoes": [

@@ -9,18 +9,23 @@
       <div class="col">
         <select name="" id="" formControlName="tipo" required>
           <option value="bermuda">bermuda</option>
+          <option value="camisa">camisa</option>
         </select>
       </div>
       <div class="col">
-        <select name="" id="" formControlName="colecao" required>
-          <option value="inverno">inverno</option>
+        <select name="" id="" formControlName="colecao" required >
+          <option value="inverno"></option>
+          <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async">{{colecoes.nome}}</option>
+
         </select>
       </div>
       <div class="col">
-        <input type="checkbox" formControlName="bordado" required>
+        <input type="checkbox" formControlName="bordado">
+        <input type="checkbox" formControlName="bordadoNao" >
       </div>
       <div class="col">
-       <input type="checkbox" formControlName="estampa" required>
+       <input type="checkbox" formControlName="estampa">
+       <input type="checkbox" formControlName="estampaNao">
       </div>
     </div>
 

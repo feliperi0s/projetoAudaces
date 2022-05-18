@@ -29,8 +29,8 @@ export class ModelosService {
     return this._http.put(`${this.API}/${modelo.id}`, modelo).pipe(take(1))
   }
 
-  public onDelete(modelo:Modelos){
-   return this._http.delete(`${this.API}/${modelo.id}`).pipe(take(1))
+  public remove(id:number){
+   return this._http.delete(`${this.API}/${id}`).pipe(take(1))
   }
 
 }

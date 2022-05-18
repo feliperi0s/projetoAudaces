@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs';
+import { catchError, empty, Observable } from 'rxjs';
 import { Modelos } from './../../_interfaces/modelos';
 import { Component, OnInit } from '@angular/core';
 import { ModelosService } from 'src/app/_servicos/modelos.service';
@@ -24,10 +24,12 @@ export class ModelosComponent implements OnInit {
   }
 
   onDelete(modelo:Modelos){
-    this._modeloService.onDelete(modelo).subscribe()
-  }
+    this._modeloService.remove(modelo.id).subscribe();
+    this.onRefresch()
+
+     }
 
   onRefresch(){
-    this._modeloService.list()
+    window.location.reload()
   }
 }

@@ -1,30 +1,11 @@
+<button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
+<button type="button" class="btn btn-primary" (click)="onCancel()">Cancelar</button>
 <form class="needs-validation" [formGroup]="form">
-    <div class="row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name" aria-label="First name" formControlName="nome" required>
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" formControlName="responsavel" required>
-        </div>
-        <div class="col">
-          <select name="" id="" formControlName="tipo" required>
-            <option value="bermuda">bermuda</option>
-          </select>
-        </div>
-        <div class="col">
-          <select name="" id="" formControlName="colecao" required>
-            <option value="inverno">inverno</option>
-          </select>
-        </div>
-        <div class="col">
-          <input type="checkbox" formControlName="bordado" required>
-        </div>
-        <div class="col">
-         <input type="checkbox" formControlName="estampa" required>
-        </div>
-      </div>
-
-      <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
-      <button type="button" class="btn btn-primary">Cancelar</button>
+<input type="text" formControlName="nome" >
+<input type="text" formControlName="estacao">
+<input type="text" formControlName="responsavel">
+<input type="text" formControlName="marca">
+<input type="number" formControlName="anoLancamento">
+<input type="number" formControlName="orcamento">
 
 </form>

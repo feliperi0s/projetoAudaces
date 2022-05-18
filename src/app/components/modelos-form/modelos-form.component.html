@@ -1,35 +1,66 @@
-<form class="needs-validation" [formGroup]="form">
+<div class="container">
   <div class="row">
+    <div class="col col-lg-2">
+      <app-nav></app-nav>
+    </div>
+    <div class="col-md-auto">
+      <div class="container">
+        <div class="row">
+  <form class="needs-validation" [formGroup]="form">
+    <h1>Criar modelo</h1>
+  <div class="container">
+    <div class="row">
       <div class="col">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name" formControlName="nome" required>
+        <input type="text"  placeholder="modelo"  formControlName="nome" required>
       </div>
       <div class="col">
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" formControlName="responsavel" required>
+        <input type="text" placeholder="responsavel" formControlName="responsavel" required>
       </div>
+    </div>
+    <div class="row">
       <div class="col">
-        <select name="" id="" formControlName="tipo" required>
-          <option value="bermuda">bermuda</option>
-          <option value="camisa">camisa</option>
+        <select  class="form-select">
+          <option selected>Tipo do modelo</option>
+          <option value="1" formControlName="tipo" required>bermuda</option>
+          <option value="2" formControlName="tipo" required>camisa</option>
         </select>
       </div>
       <div class="col">
-        <select name="" id="" formControlName="colecao" required >
-          <option value="inverno"></option>
-          <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async">{{colecoes.nome}}</option>
-
+        <select class="form-select" required>
+          <option selected formControlName="colecao">Selecionar Coleção</option>
+          <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async"> {{colecoes.nome}}</option>
         </select>
       </div>
+    </div>
+    <div class="row">
       <div class="col">
+        <span>Possui bordado? </span> 
+        <div class="form-check">
+        <span>Sim </span> 
         <input type="checkbox" formControlName="bordado">
+        <span>Não </span> 
         <input type="checkbox" formControlName="bordadoNao" >
       </div>
+      </div>
       <div class="col">
+        <span>Possui estampa? </span> 
+        <div class="form-check">
+        <span>Sim </span> 
        <input type="checkbox" formControlName="estampa">
+       <span>Não </span> 
        <input type="checkbox" formControlName="estampaNao">
       </div>
     </div>
-
+      </div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col">
     <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
     <button type="button" class="btn btn-primary" (click)="onCancel()">Cancelar</button>
-
+  </div>
+</div>
 </form>
+</div>
+    </div>
+</div>
+</div>

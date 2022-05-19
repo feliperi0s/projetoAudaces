@@ -17,6 +17,17 @@
       "tipo": "tenis",
       "bordado": true,
       "estampado": false
+    },
+    {
+      "id": 3,
+      "nome": "sadsad",
+      "responsavel": "asdsad",
+      "tipo": "bermuda",
+      "colecao": "Coleção 1",
+      "bordado": true,
+      "estampa": true,
+      "bordadoNao": null,
+      "estampaNao": null
     }
   ],
   "colecoes": [

@@ -22,13 +22,12 @@
             </tr>
           </thead>
           <tbody>
-              <tr *ngFor="let modelo of modelos$ | async">
+              <tr *ngFor="let modelo of modelos$ | async" (click)="onEditi(modelo.id)">
                     <td>{{modelo.id}}</td>
                     <td>{{modelo.nome}}</td>
                     <td>{{modelo.colecao}}</td>
                     <td>{{modelo.responsavel}}</td>
-                    <button class="btn btn-primary me-md-2" type="button" (click)="onDelete(modelo)">Excluir</button>
-                    <button class="btn btn-primary me-md-2" type="button" (click)="onEditi(modelo.id)">Editar</button>
+                    <button type="button" (click)="onDelete(modelo)">Excluir</button>
                 </tr>
           </tbody>
         </table>

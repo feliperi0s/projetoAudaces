@@ -13,6 +13,7 @@ import { ModelosFormComponent } from './components/modelos-form/modelos-form.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
+import { ColecaoValorComponent } from './components/colecao-valor/colecao-valor.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavComponent } from './components/nav/nav.component';
     ColecaoFormComponent,
     ModelosFormComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    ColecaoValorComponent
   ],
   imports: [
     BrowserModule,

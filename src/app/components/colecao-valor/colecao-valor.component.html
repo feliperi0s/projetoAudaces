@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ColecaoID</th>
+        <th scope="col">Nome da Colecao</th>
+        <th scope="col">Orçamento</th>
+        <th scope="col">Responsavel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let colecoes of colecao$">
+        <th scope="row">{{colecoes.id}}</th>
+        <td>{{colecoes.nome}}</td>
+        <td>{{colecoes.orcamento}}</td>
+        <td>{{colecoes.responsavel}}</td>
+      </tr>
+    </tbody>
+  </table>

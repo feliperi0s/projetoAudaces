@@ -19,15 +19,15 @@
     </div>
     <div class="row">
       <div class="col">
-        <select  class="form-select">
+        <select  class="form-select" formControlName="tipo" required>
           <option selected>Tipo do modelo</option>
-          <option value="1" formControlName="tipo" required>bermuda</option>
-          <option value="2" formControlName="tipo" required>camisa</option>
+          <option value="bermuda">bermuda</option>
+          <option value="camisa">camisa</option>
         </select>
       </div>
       <div class="col">
-        <select class="form-select" required>
-          <option selected formControlName="colecao">Selecionar Coleção</option>
+        <select class="form-select" formControlName="colecao" required>
+          <option selected>Selecionar Coleção</option>
           <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async"> {{colecoes.nome}}</option>
         </select>
       </div>

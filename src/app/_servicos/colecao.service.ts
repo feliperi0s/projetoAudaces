@@ -11,21 +11,21 @@ export class ColecaoService {
 
   private readonly API = `${environment.API}colecoes`
 
-  constructor(public _http:HttpClient) { }
+  constructor(public _http: HttpClient) { }
 
-  public getColecao():Observable<Colecao[]>{
+  public getColecao(): Observable<Colecao[]> {
     return this._http.get<Colecao[]>(this.API);
   }
 
-  public postModelos(colecao:Colecao){
+  public postModelos(colecao: Colecao) {
     return this._http.post(this.API, colecao).pipe(take(1));
   }
 
-  public loadById(id:number){
+  public loadById(id: number) {
     return this._http.get<Colecao>(`${this.API}/${id}`).pipe(take(1));
   }
 
-  public update(modelo: Colecao){
+  public update(modelo: Colecao) {
     return this._http.put(`${this.API}/${modelo.id}`, modelo).pipe(take(1))
   }
 

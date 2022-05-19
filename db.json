@@ -17,17 +17,6 @@
       "tipo": "tenis",
       "bordado": true,
       "estampado": false
-    },
-    {
-      "id": 3,
-      "nome": "sasas",
-      "responsavel": "asasa",
-      "tipo": "bermuda",
-      "colecao": "Coleção 1",
-      "bordado": true,
-      "estampa": true,
-      "bordadoNao": null,
-      "estampaNao": null
     }
   ],
   "colecoes": [
@@ -47,7 +36,7 @@
       "responsavel": "Thiago",
       "marca": "Adidas",
       "anoLancamento": 2022,
-      "orcamento": 35000
+      "orcamento": 45000
     },
     {
       "id": 3,
@@ -56,7 +45,7 @@
       "responsavel": "Pedro",
       "marca": "Renner",
       "anoLancamento": 2023,
-      "orcamento": 35000
+      "orcamento": 37000
     }
   ]
 }

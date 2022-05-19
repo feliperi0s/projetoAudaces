@@ -8,6 +8,7 @@ import { ColecaoComponent } from './components/colecao/colecao.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './components/nav/nav.component';
+import { ColecaoValorComponent } from './components/colecao-valor/colecao-valor.component';
 
 const routes: Routes = [
 
@@ -55,6 +56,11 @@ const routes: Routes = [
     path:'editarModelo/:id',
     component:ModelosFormComponent
   },
+
+  {
+    path:'colecaovalor',
+    component:ColecaoValorComponent
+  }
 
 ];
 

@@ -9,16 +9,19 @@ button{
 
 input{
     width: 340px;
+    border: none;
 }
 #sign{
     font-size: 1.7em;
     font-weight: 500;
 }
 
-#text{
-    font-size: 0.9em;
-    font-weight: 500;
-    color: rgba(128, 128, 128, 0.661); 
+.text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #989898; 
+    font-family: 'Inter', sans-serif;
 }
 
 a{
@@ -26,3 +29,19 @@ a{
     font-weight: 500;
 }
 
+.content{
+    background-color: #F2F5FF;
+    min-height: 657px;
+}
+
+#login{
+    background-color: #FFFFFF;
+    width: 480px;
+    height: 407px;
+    border-radius: 8px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.444);
+}
+
+#imagem{
+    margin-top: 30px;
+}

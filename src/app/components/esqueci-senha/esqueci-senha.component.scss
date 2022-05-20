@@ -5,22 +5,32 @@ div{
 button{
     width: 350px;
     border-style: none;
+    height: 50px;
+    padding: 14px, 133px, 14px, 133px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.78px;
 }
 
 input{
     width: 340px;
+    border: 1px solid rgba(0, 0, 0, 0.222);
+    border-radius: 5px;
+    padding: 7px;
 }
 #sign{
     font-size: 1.7em;
     font-weight: 500;
-    color: #056fd2
+    color: #304C71;
+    padding-left: 60px;
 }
 
 #text{
     font-size: 0.9em;
     font-weight: 500;
-    color: rgba(128, 128, 128, 0.661); 
+    color: #B4B6C1; 
     text-align: center;
+    margin-top: -40px;
 }
 
 a{
@@ -28,6 +38,30 @@ a{
     font-weight: 500;
 }
 img{
-    height: 20px;
     padding-right: 35px;
+}
+
+.content{
+    background-color: #F2F5FF;
+    min-height: 657px;
+}
+
+#login{
+    background-color: #FFFFFF;
+    width: 480px;
+    height: 407px;
+    border-radius: 8px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.444);
+}
+
+p{
+    text-align: center;
+}
+
+#all{
+    padding-top: 50px;
+}
+
+#imagem{
+    margin-top: 40px;
 }

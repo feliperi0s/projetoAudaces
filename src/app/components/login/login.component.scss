@@ -9,7 +9,9 @@ button{
 
 input{
     width: 340px;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.222);
+    border-radius: 5px;
+    padding: 7px;
 }
 #sign{
     font-size: 1.7em;
@@ -26,7 +28,7 @@ input{
 
 a{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .content{

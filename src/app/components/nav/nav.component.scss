@@ -1,8 +1,13 @@
 a {
     font-size: 0.8em;
+    width: 180px;
+    margin: auto;
+    padding-left: 10px;
+
 }
 nav {
     padding: 15px;
+    width: 200px;
 }
 
 span{
@@ -11,4 +16,17 @@ span{
 
 #logout{
     padding-top: 70%;
+}
+
+.inside{
+    margin: auto;
+
+}
+
+.cadSup{
+    font-size: 1em;
+    margin-right: 0px;
+}
+div{
+    padding: 5px 0px;
 }

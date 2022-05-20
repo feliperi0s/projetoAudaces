@@ -1,24 +1,21 @@
 <nav class="navbar navbar-light bg-light">
+  <div class="inside">
     <img src="../../../assets/images/audaces.png" alt="">
     <div class="container-fluid">
       <a class="navbar-brand" href="#" [routerLink]="['/home']">Dashboard</a>
     </div>
-    <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">CADASTRO</span>
+          <span class="navbar-brand mb-0 h1" class="cadSup">CADASTRO</span>
         </div>
-      </nav>
     <div class="container-fluid">
         <a class="navbar-brand" href="#" [routerLink]="['/colecao']">Coleções</a>
       </div>
       <div class="container-fluid">
         <a class="navbar-brand" href="#" [routerLink]="['/modelos']">Modelos</a>
       </div>
-      <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">SUPORTE</span>
+          <span class="navbar-brand mb-0 h1" class="cadSup">SUPORTE</span>
         </div>
-      </nav>
       <div class="container-fluid">
         <a class="navbar-brand" href="/home">Obter Ajuda</a>
       </div>
@@ -28,4 +25,5 @@
       <div class="container-fluid" id="logout">
         <a class="navbar-brand" href="/">Logout <img src="../../../assets/images/images.png"></a>
       </div>
+    </div>
   </nav>

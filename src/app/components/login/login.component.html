@@ -1,27 +1,35 @@
-<div class="content">
-    <div class="d-flex justify-content-center" id="imagem">
-        <img src="../../../assets/images/Fill-51.png" alt="">
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-sm-3">
+            <app-nav></app-nav>
         </div>
-<form>
-    <div class="position-absolute top-50 start-50 translate-middle" id="login">
-        <div class="d-flex justify-content-center" >
-            <p id="sign">Sign In</p>
+        <div class="col-6 col-sm-3" class="dentro">
+            <div class="textoPrincipal">
+                <p>Bem vindo, <strong>Felipe</strong> </p>
+                <p>Acompanhe a visão geral de suas coleções</p>
             </div>
-            <div class="d-flex justify-content-center" >
-                <p class="text">Insira as suas credencias para acessar sua conta</p>
+            <div class=row>
+                <div class="col">
+                    <div class='quadrado'>
+                        <p>Coleções</p>
+                        <p class="numeros">{{somaColecao}}</p>
+                    </div>
                 </div>
-        <div class="d-flex justify-content-center" >
-          <input type="email"  formControlName="login" placeholder="Informe seu e-mail">
-        </div>
-        <div class="d-flex justify-content-center">
-          <input type="password" formControlName="senha" placeholder="Informe sua senha">
-        </div>
-        <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary" [routerLink]="['/home']">Entrar</button>
-        </div>
-        <div class="d-flex justify-content-center" >
-            <p class="text">Esqueceu sua Senha? <a href="" [routerLink]="['esqueciSenha']">Redefinir senha</a></p>
+                <div class="col">
+                    <div class='quadrado'>
+                        <p>Modelos</p>
+                        <p class="numeros">{{somaModelo}}</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class='quadrado'>
+                        <p>Orçamento Medio por coleção</p>
+                        <p class="numeros">{{stringMedia}}</p>
+                    </div>
+                </div>
             </div>
+            <h2>Maiores orçamentos</h2>
+            <app-colecao-valor></app-colecao-valor>
+        </div>
     </div>
-</form>
 </div>

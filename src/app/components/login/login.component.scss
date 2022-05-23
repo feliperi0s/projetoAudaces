@@ -1,35 +1,49 @@
-h1 {
-    padding: 15px;
-    font-size: 1.5em;
+div{
+    padding: 10px;
 }
 
-.container {
-    margin: 0px;
-}
-.dentro {
-    width: 75%;
-    margin-top: 50px;
-    padding-left: 50px;
+button{
+    width: 350px;
+    border-style: none;
 }
 
-.textoPrincipal{
+input{
+    width: 340px;
+    border: 1px solid rgba(0, 0, 0, 0.222);
+    border-radius: 5px;
+    padding: 7px;
+}
+#sign{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.text{
     font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #989898; 
+    font-family: 'Inter', sans-serif;
 }
 
-.quadrado{
-    background-color:#EBF0FA;
-    text-align: center;
-    font-size: 14px;
-    outline: 50px;
-    width: 245px;
-    height: 80px;
+a{
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.numeros{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;  
+.content{
+    background-color: #F2F5FF;
+    min-height: 657px;
 }
-h2{
-    margin: 50px 0px;
+
+#login{
+    background-color: #FFFFFF;
+    width: 480px;
+    height: 407px;
+    border-radius: 8px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.444);
+}
+
+#imagem{
+    margin-top: 30px;
 }

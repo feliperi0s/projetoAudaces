@@ -1,3 +1,4 @@
+import { ContentComponent } from './components/content/content.component';
 import { HomeComponent } from './components/home/home.component';
 import { EsqueciSenhaComponent } from './components/esqueci-senha/esqueci-senha.component';
 import { LoginComponent } from './components/login/login.component';
@@ -23,44 +24,90 @@ const routes: Routes = [
   },
 
   {
-    path:'home',
-    component:HomeComponent
+    path:'logado',
+    component:ContentComponent,
+    children : [
+      {
+        path:'home',
+        component:HomeComponent
+      },
+    
+      {
+        path:'nav',
+        component:NavComponent
+      },
+    
+      {
+        path:'colecao',
+        component:ColecaoComponent
+      },
+      {
+        path:'novaColecao',
+        component:ColecaoFormComponent
+      },
+      {
+        path:'editarColecao/:id',
+        component:ColecaoFormComponent
+      },
+      {
+        path:'modelos',
+        component:ModelosComponent
+      },
+      {
+        path:'novoModelo',
+        component:ModelosFormComponent
+      },
+      {
+        path:'editarModelo/:id',
+        component:ModelosFormComponent
+      },
+    
+      {
+        path:'colecaovalor',
+        component:ColecaoValorComponent
+      }
+    ]
   },
 
-  {
-    path:'nav',
-    component:NavComponent
-  },
+  // {
+  //   path:'home',
+  //   component:HomeComponent
+  // },
 
-  {
-    path:'colecao',
-    component:ColecaoComponent
-  },
-  {
-    path:'novaColecao',
-    component:ColecaoFormComponent
-  },
-  {
-    path:'editarColecao/:id',
-    component:ColecaoFormComponent
-  },
-  {
-    path:'modelos',
-    component:ModelosComponent
-  },
-  {
-    path:'novoModelo',
-    component:ModelosFormComponent
-  },
-  {
-    path:'editarModelo/:id',
-    component:ModelosFormComponent
-  },
+  // {
+  //   path:'nav',
+  //   component:NavComponent
+  // },
 
-  {
-    path:'colecaovalor',
-    component:ColecaoValorComponent
-  }
+  // {
+  //   path:'colecao',
+  //   component:ColecaoComponent
+  // },
+  // {
+  //   path:'novaColecao',
+  //   component:ColecaoFormComponent
+  // },
+  // {
+  //   path:'editarColecao/:id',
+  //   component:ColecaoFormComponent
+  // },
+  // {
+  //   path:'modelos',
+  //   component:ModelosComponent
+  // },
+  // {
+  //   path:'novoModelo',
+  //   component:ModelosFormComponent
+  // },
+  // {
+  //   path:'editarModelo/:id',
+  //   component:ModelosFormComponent
+  // },
+
+  // {
+  //   path:'colecaovalor',
+  //   component:ColecaoValorComponent
+  // }
 
 ];
 

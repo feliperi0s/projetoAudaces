@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ColecaoValorComponent } from './components/colecao-valor/colecao-valor.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ColecaoValorComponent } from './components/colecao-valor/colecao-valor.
     ModelosFormComponent,
     HomeComponent,
     NavComponent,
-    ColecaoValorComponent
+    ColecaoValorComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

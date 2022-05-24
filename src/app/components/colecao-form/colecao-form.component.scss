@@ -1,15 +1,11 @@
 input{
-   margin: 15px 0px 15px 15px;
+   margin: 15px 80px 15px 15px;
    border: none;
    background-color: rgba(128, 128, 128, 0.343);
    border-radius: 10px;
    font-size: 0.8em;
    width: 250px;
-   padding: 5px 5px;
-}
-
-.col{
-    padding-left: 206px;
+   padding: 5px 10px;
 }
 
 button{
@@ -18,4 +14,20 @@ button{
 
 #criarColecao{
     margin-top: 50px;
+}
+img{
+    margin: center;
+}
+
+.container{
+    margin-left: 50px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+.imagem{
+    margin-left: 160px;
+    padding: 20px 0px;
 }

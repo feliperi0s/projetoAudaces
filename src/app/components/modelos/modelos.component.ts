@@ -20,7 +20,7 @@ export class ModelosComponent implements OnInit {
   }
 
   onEditi(id:number){
-    this._router.navigate(['editarModelo',id]),{relativeTo:this._rout}
+    this._router.navigate(['logado/editarModelo',id]),{relativeTo:this._rout}
   }
 
   onDelete(modelo:Modelos){

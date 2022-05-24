@@ -1,32 +1,23 @@
-
-
+<h1>Criar coleção</h1>
 <div class="container">
-        <div class="row">
-                  <div class="col-6" id="criarColecao">
-                      <h1>Criar coleção</h1>
-                                      <form class="needs-validation" [formGroup]="form">
-                                      <div>
-                                  <input type="text" formControlName="nome" placeholder="Nome da Coleção" >
-                                  <input type="text" formControlName="responsavel" placeholder="Responsavel pela coleção">
-                                      </div>
-                                      <div>
-                                  <input type="text" formControlName="estacao" placeholder="Para qual estação?">
-                                  <input type="text" formControlName="marca" placeholder="Para qual marca vocês está criando?">
-                                      </div>
-                                      <div>
-                                  <input type="number" formControlName="orcamento" placeholder="Qual o orçamento dessa coleção?">
-                                  <input type="number" formControlName="anoLancamento" placeholder="Ano de lançamento">
-                                      </div>
-                                      
-                                      </form>
-                                      <div class="container">
-                                        <div class="row align-items-end">
-                                    <div class="col">
-                                        <button type="button" class="btn btn-outline-secondary" (click)="onCancel()">Cancelar</button>
-                                        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
-                                  </div>
-                                  
-                  </div>
-            </div>
-                </div>
+    <form class="needs-validation" [formGroup]="form">
+        <div>
+            <input type="text" formControlName="nome" placeholder="Nome da Coleção">
+            <input type="text" formControlName="responsavel" placeholder="Responsavel pela coleção">
         </div>
+        <div>
+            <input type="text" formControlName="estacao" placeholder="Para qual estação?">
+            <input type="text" formControlName="marca" placeholder="Para qual marca vocês está criando?">
+        </div>
+        <div>
+            <input type="number" formControlName="orcamento" placeholder="Qual o orçamento dessa coleção?">
+            <input type="number" formControlName="anoLancamento" placeholder="Ano de lançamento">
+        </div>
+    </form>
+    <div class="imagem"><img src="../../../assets/images/editcolecao.png" alt=""></div>
+    
+    <div>
+        <button type="button" class="btn btn-outline-secondary" (click)="onCancel()">Cancelar</button>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
+    </div>
+</div>

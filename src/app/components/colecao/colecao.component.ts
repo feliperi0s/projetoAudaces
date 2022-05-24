@@ -20,7 +20,7 @@ export class ColecaoComponent implements OnInit {
   }
 
   onEditi(id:number){
-    this._router.navigate(['editarColecao',id]),{relativeTo:this._rout}
+    this._router.navigate(['logado/editarColecao',id]),{relativeTo:this._rout}
   }
 
   onRefresch(){

@@ -3,31 +3,31 @@
   <div class="row">
     <div class="col">
       <div class="card-header">
-          <div  class="d-flex justify-content-between">
-            <div class="p-2 bd-highlight">Modelos</div>
-              <button class="btn btn-primary me-md-2" type="button" [routerLink]="['/logado/novoModelo']" >Criar Modelo</button>
-          </div>
+        <div class="d-flex justify-content-between">
+          <div class="p-2 bd-highlight">Modelos</div>
+          <button class="btn btn-primary me-md-2" type="button" [routerLink]="['/logado/novoModelo']">Criar
+            Modelo</button>
+        </div>
       </div>
-      
+
       <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">ModeloID</th>
-              <th scope="col">Nome do Modelo</th>
-              <th scope="col">Coleção</th>
-              <th scope="col">Responsavel</th>
-            </tr>
-          </thead>
-          <tbody>
-              <tr *ngFor="let modelo of modelos$ | async" (click)="onEditi(modelo.id)">
-                    <td>{{modelo.id}}</td>
-                    <td>{{modelo.nome}}</td>
-                    <td>{{modelo.colecao}}</td>
-                    <td>{{modelo.responsavel}}</td>
-                    <button type="button" (click)="onDelete(modelo)">Excluir</button>
-                </tr>
-          </tbody>
-        </table>
+        <thead>
+          <tr>
+            <th scope="col">ModeloID</th>
+            <th scope="col">Nome do Modelo</th>
+            <th scope="col">Coleção</th>
+            <th scope="col">Responsavel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let modelo of modelos$ | async" (click)="onEditi(modelo.id)">
+            <td>{{modelo.id}}</td>
+            <td>{{modelo.nome}}</td>
+            <td>{{modelo.colecao}}</td>
+            <td>{{modelo.responsavel}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

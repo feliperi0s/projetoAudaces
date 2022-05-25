@@ -1,5 +1,6 @@
 <div class="container">
-    <h1>Criar coleção</h1>
+    <h1 *ngIf="this.form.value.id">Editar coleção</h1>
+    <h1 *ngIf="this.form.value.id == null">Criar coleção</h1>
     <form class="needs-validation" [formGroup]="form">
         <div>
             <input type="text" formControlName="nome" placeholder="Nome da Coleção">

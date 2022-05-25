@@ -4,8 +4,9 @@ import { ActivatedRoute } from '@angular/router';
 import { ModelosService } from 'src/app/_servicos/modelos.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { Location } from '@angular/common';
+import { async, Observable } from 'rxjs';
+import { AsyncPipe, Location } from '@angular/common';
+import { Modelos } from 'src/app/_interfaces/modelos';
 
 @Component({
   selector: 'app-modelos-form',
@@ -14,85 +15,100 @@ import { Location } from '@angular/common';
 })
 export class ModelosFormComponent implements OnInit {
 
-  public form!:FormGroup
+  public form!: FormGroup
   public submitted = false
-  public colecao$!:Observable<Colecao[]>
+  public colecao$!: Observable<Colecao[]>
+  public modelos$!: Observable<Modelos[]>
 
-  
-  constructor( private _formBuilder:FormBuilder, private _modeloService:ModelosService, private _route:ActivatedRoute, public _colecaoService:ColecaoService, private _location :Location) { }
+
+
+  constructor(private _formBuilder: FormBuilder, private _modeloService: ModelosService, private _route: ActivatedRoute, public _colecaoService: ColecaoService, private _location: Location) { }
 
   ngOnInit(): void {
+    this.modelos$ = this._modeloService.getModelos()
     this.colecao$ = this._colecaoService.getColecao()
     let registro = null
     this.form = this._formBuilder.group({
       id: null,
-      nome:[null,[Validators.required,Validators.minLength(3)]],
-      responsavel:[null,[Validators.required]],
-      tipo:["Tipo do modelo",[Validators.required]],
-      colecao:["Selecionar Coleção",[Validators.required]],
-      bordado:[],
-      estampa:[],
-      bordadoNao:[],
-      estampaNao:[],
+      nome: [null, [Validators.required, Validators.minLength(3)]],
+      responsavel: [null, [Validators.required]],
+      tipo: ["Tipo do modelo", [Validators.required]],
+      colecao: ["Selecionar Coleção", [Validators.required]],
+      bordado: [],
+      estampa: [],
+      bordadoNao: [],
+      estampaNao: [],
     });
     this._route.params.subscribe(
       (params: any) => {
         const id = params['id'];
-         const modelos$ = this._modeloService.loadById(id);
-         modelos$.subscribe( modelo => {
-           registro = modelo;
-           this.updateForm(modelo)
-         }
+        const modelos$ = this._modeloService.loadById(id);
+        modelos$.subscribe(modelo => {
+          registro = modelo;
+          this.updateForm(modelo)
+        }
 
-         )
+        )
       }
     )
 
   }
 
-  public onSubmit(){
-    
+  public onSubmit() {
+
     this.submitted = true
-    if(this.form.valid){
-      
-      if(this.form.value.id){
+    if (this.form.valid) {
+
+      if (this.form.value.id) {
         this._modeloService.update(this.form.value).subscribe(
           success => console.log('sucess'),
           () => console.log('erro')
         )
         this._location.back()
-      }else {
+      } else {
         this._modeloService.postModelos(this.form.value).subscribe()
         this._location.back()
       }
     }
   }
 
-  public updateForm(modelo:any){
+  public updateForm(modelo: any) {
     this.form.patchValue({
-      id : modelo.id,
+      id: modelo.id,
       nome: modelo.nome,
       colecao: modelo.colecao,
-      responsavel:modelo.responsavel,
+      responsavel: modelo.responsavel,
       tipo: modelo.tipo,
       bordado: modelo.bordado,
       estampado: modelo.estampado
     })
   }
 
-  public onCancel(){
+  public onCancel() {
     this.submitted = false;
-    if(this.form.value.id){
+    if (this.form.value.id) {
       this._location.back()
-    }else {
+    } else {
       this.form.reset();
       this._location.back()
     }
   }
 
+  onDelete() {
 
-  
+    this.submitted = true
+    if (this.form.valid) {
+
+      if (this.form.value.id) {
+        this._modeloService.remove(this.form.value.id).subscribe(
+          success => console.log('sucess'),
+          () => console.log('erro')
+        )
+        this._location.back()
+      }
+    }
   }
 
+}
 
-  
+

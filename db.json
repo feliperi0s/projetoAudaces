@@ -1,29 +1,33 @@
 {
   "modelos": [
     {
-      "id": 1,
-      "nome": "Modelo 1",
-      "colecao": "Coleção 1",
-      "responsavel": "Felipe",
-      "tipo": "tenis",
-      "bordado": true,
-      "estampado": false
-    },
-    {
       "id": 2,
       "nome": "Modelo 2",
-      "colecao": "Coleção 2",
       "responsavel": "Thiago",
-      "tipo": "tenis",
+      "tipo": "bermuda",
+      "colecao": "Coleção 2",
       "bordado": true,
-      "estampado": false
+      "estampa": null,
+      "bordadoNao": null,
+      "estampaNao": null
     },
     {
-      "id": 3,
-      "nome": "sadsad",
-      "responsavel": "asdsad",
+      "id": 4,
+      "nome": "dasdsa",
+      "responsavel": "adsadas",
       "tipo": "bermuda",
-      "colecao": "Coleção 1",
+      "colecao": "Coleção 2",
+      "bordado": true,
+      "estampa": true,
+      "bordadoNao": null,
+      "estampaNao": null
+    },
+    {
+      "id": 5,
+      "nome": "dasdsa",
+      "responsavel": "dsadas",
+      "tipo": "camisa",
+      "colecao": "Coleção 2",
       "bordado": true,
       "estampa": true,
       "bordadoNao": null,

@@ -1,6 +1,7 @@
 <div class="container">
   <form class="needs-validation" [formGroup]="form">
-    <h1>Criar modelo</h1>
+    <h1 *ngIf="this.form.value.id">Editar modelo</h1>
+    <h1 *ngIf="this.form.value.id == null">Criar modelo</h1>
         <div id="primeiralinha">
           <input type="text"  placeholder="modelo"  formControlName="nome" required>
           <input type="text" placeholder="responsavel" formControlName="responsavel" required>
@@ -35,5 +36,6 @@
     <div id="botoes">
       <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
       <button type="button" class="btn btn-primary" (click)="onCancel()">Cancelar</button>
+      <button *ngIf="this.form.value.id" type="button" (click)="onDelete()">Excluir</button>
     </div>
 </form>

@@ -1,3 +1,23 @@
 .container{
     margin: 0%;
 }
+#primeiralinha input{
+    width: 250px;
+}
+
+select{
+    width: 250px;
+}
+
+#segundalinha {
+    display: flex;
+    flex-direction: row;
+}
+
+#terceiralinha{
+    display: flex;
+    flex-direction: row;
+}
+#terceiralinha div {
+    width: 250px;
+}

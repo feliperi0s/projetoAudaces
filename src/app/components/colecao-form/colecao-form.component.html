@@ -1,5 +1,5 @@
-<h1>Criar coleção</h1>
 <div class="container">
+    <h1>Criar coleção</h1>
     <form class="needs-validation" [formGroup]="form">
         <div>
             <input type="text" formControlName="nome" placeholder="Nome da Coleção">
@@ -15,9 +15,9 @@
         </div>
     </form>
     <div class="imagem"><img src="../../../assets/images/editcolecao.png" alt=""></div>
-    
-    <div>
-        <button type="button" class="btn btn-outline-secondary" (click)="onCancel()">Cancelar</button>
+
+    <div class="d-flex flex-row-reverse" id="botoes">
         <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="onCancel()">Cancelar</button>
     </div>
 </div>

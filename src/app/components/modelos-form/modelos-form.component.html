@@ -1,63 +1,39 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-auto">
-      <div class="container">
-        <div class="row">
   <form class="needs-validation" [formGroup]="form">
     <h1>Criar modelo</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <input type="text"  placeholder="modelo"  formControlName="nome" required>
-      </div>
-      <div class="col">
-        <input type="text" placeholder="responsavel" formControlName="responsavel" required>
-      </div>
+        <div id="primeiralinha">
+          <input type="text"  placeholder="modelo"  formControlName="nome" required>
+          <input type="text" placeholder="responsavel" formControlName="responsavel" required>
+        </div>
+        <div id="segundalinha">
+          <select formControlName="tipo" class="form-select" required >
+            <option selected>Tipo do modelo</option>
+            <option value="bermuda">bermuda</option>
+            <option value="camisa">camisa</option>
+          </select>
+          <select class="form-select" formControlName="colecao" required>
+            <option selected>Selecionar Coleção</option>
+            <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async"> {{colecoes.nome}}</option>
+          </select>
+        </div>
+        <div id="terceiralinha">
+          <div>
+            <span>Possui bordado? </span> <br>
+            <span>Sim </span>
+            <input type="checkbox" formControlName="bordado">
+            <span>Não </span>
+                    <input type="checkbox" formControlName="bordadoNao" >
+        </div>
+        <div>
+            <span>Possui estampa? </span> <br>
+            <span>Sim </span>
+                   <input type="checkbox" value="true" formControlName="estampa">
+                   <span>Não </span>
+                   <input type="checkbox" formControlName="estampaNao">
+        </div>
+        </div>
+    <div id="botoes">
+      <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
+      <button type="button" class="btn btn-primary" (click)="onCancel()">Cancelar</button>
     </div>
-    <div class="row">
-      <div class="col">
-        <select  class="form-select" formControlName="tipo" required>
-          <option selected>Tipo do modelo</option>
-          <option value="bermuda">bermuda</option>
-          <option value="camisa">camisa</option>
-        </select>
-      </div>
-      <div class="col">
-        <select class="form-select" formControlName="colecao" required>
-          <option selected>Selecionar Coleção</option>
-          <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async"> {{colecoes.nome}}</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <span>Possui bordado? </span> 
-        <div class="form-check">
-        <span>Sim </span> 
-        <input type="checkbox" formControlName="bordado">
-        <span>Não </span> 
-        <input type="checkbox" formControlName="bordadoNao" >
-      </div>
-      </div>
-      <div class="col">
-        <span>Possui estampa? </span> 
-        <div class="form-check">
-        <span>Sim </span> 
-       <input type="checkbox" value="true" formControlName="estampa">
-       <span>Não </span> 
-       <input type="checkbox" formControlName="estampaNao">
-      </div>
-    </div>
-      </div>
-    </div>
-    <div class="row align-items-end">
-      <div class="col">
-    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
-    <button type="button" class="btn btn-primary" (click)="onCancel()">Cancelar</button>
-  </div>
-</div>
 </form>
-</div>
-    </div>
-</div>
-</div>

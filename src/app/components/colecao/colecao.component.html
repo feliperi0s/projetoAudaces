@@ -11,15 +11,15 @@
       <table class="table table-hover">
           <thead>
             <tr>
-              <th scope="col">ColecaoID</th>
-              <th scope="col">Nome da Colecao</th>
-              <th scope="col">Estacao e Lançamento</th>
-              <th scope="col">Responsavel</th>
+              <td scope="col">ColecaoID</td>
+              <td scope="col">Nome da Colecao</td>
+              <td scope="col">Estacao e Lançamento</td>
+              <td scope="col">Responsavel</td>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let colecoes of colecao$ |async" (click)="onEditi(colecoes.id)">
-              <th scope="row">{{colecoes.id}}</th>
+              <td scope="row">{{colecoes.id}}</td>
               <td>{{colecoes.nome}}</td>
               <td>{{colecoes.estacao}}-{{colecoes.anoLancamento}}</td>
               <td>{{colecoes.responsavel}}</td>

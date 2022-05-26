@@ -64,7 +64,7 @@ export class ModelosFormComponent implements OnInit {
           success => console.log('sucess'),
           () => console.log('erro')
         )
-        this._location.back()
+        this._location.back()        
       } else {
         this._modeloService.postModelos(this.form.value).subscribe()
         this._location.back()

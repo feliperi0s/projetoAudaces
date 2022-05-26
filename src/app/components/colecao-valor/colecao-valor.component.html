@@ -1,15 +1,15 @@
 <table class="table" >
     <thead>
       <tr>
-        <th scope="col">ColecaoID</th>
-        <th scope="col">Nome da Colecão</th>
-        <th scope="col">Orçamento</th>
-        <th scope="col">Responsável</th>
+        <td scope="col">ColecaoID</td>
+        <td scope="col">Nome da Colecão</td>
+        <td scope="col">Orçamento</td>
+        <td scope="col">Responsável</td>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let colecoes of colecao$">
-        <th scope="row">{{colecoes.id}}</th>
+        <td scope="row">{{colecoes.id}}</td>
         <td>{{colecoes.nome}}</td>
         <td>{{colecoes.orcamento}}</td>
         <td>{{colecoes.responsavel}}</td>

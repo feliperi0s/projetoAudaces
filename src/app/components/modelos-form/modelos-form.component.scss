@@ -1,8 +1,22 @@
 .container{
     margin: 0%;
+    margin-left: 50px;
 }
+
+
 #primeiralinha input{
     width: 250px;
+    border: 1px solid rgba(128, 128, 128, 0.244);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#primeiralinha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    margin-top: 50px;
 }
 
 select{
@@ -12,12 +26,29 @@ select{
 #segundalinha {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    margin-top: 50px;
 }
 
 #terceiralinha{
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
 #terceiralinha div {
-    width: 250px;
+    width: 350px;
+}
+
+#botoes{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin-left: 10px;
+    margin-top: 150px;
+
+}
+
+#botoes button{
+    width: 150px;
 }

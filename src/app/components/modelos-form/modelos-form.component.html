@@ -2,40 +2,51 @@
   <form class="needs-validation" [formGroup]="form">
     <h1 *ngIf="this.form.value.id">Editar modelo</h1>
     <h1 *ngIf="this.form.value.id == null">Criar modelo</h1>
-        <div id="primeiralinha">
-          <input type="text"  placeholder="modelo"  formControlName="nome" required>
-          <input type="text" placeholder="responsavel" formControlName="responsavel" required>
-        </div>
-        <div id="segundalinha">
-          <select formControlName="tipo" class="form-select" required >
-            <option selected>Tipo do modelo</option>
-            <option value="bermuda">bermuda</option>
-            <option value="camisa">camisa</option>
-          </select>
-          <select class="form-select" formControlName="colecao" required>
-            <option selected>Selecionar Coleção</option>
-            <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async"> {{colecoes.nome}}</option>
-          </select>
-        </div>
-        <div id="terceiralinha">
-          <div>
-            <span>Possui bordado? </span> <br>
-            <span>Sim </span>
-            <input type="checkbox" formControlName="bordado">
-            <span>Não </span>
-                    <input type="checkbox" formControlName="bordadoNao" >
-        </div>
-        <div>
-            <span>Possui estampa? </span> <br>
-            <span>Sim </span>
-                   <input type="checkbox" value="true" formControlName="estampa">
-                   <span>Não </span>
-                   <input type="checkbox" formControlName="estampaNao">
-        </div>
-        </div>
-    <div id="botoes">
-      <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
-      <button type="button" class="btn btn-primary" (click)="onCancel()">Cancelar</button>
-      <button *ngIf="this.form.value.id" type="button" (click)="onDelete()">Excluir</button>
+    <div id="primeiralinha">
+      <input type="text" placeholder="Modelo" formControlName="nome" required>
+      <input type="text" placeholder="Responsavel" formControlName="responsavel" required>
     </div>
-</form>
+    <div id="segundalinha">
+      <select formControlName="tipo" class="form-select" required>
+        <option selected>Tipo do modelo</option>
+        <option value="bermuda">Bermuda</option>
+        <option value="biquíni">Biquíni</option>
+        <option value="bolsa">Bolsa</option>
+        <option value="boné">Boné</option>
+        <option value="calça">Calça</option>
+        <option value="calçados">Calçados</option>
+        <option value="camisa">Camisa</option>
+        <option value="chapéu">Chapéu</option>
+        <option value="saia">Saia</option>
+      </select>
+      <select class="form-select" formControlName="colecao" required>
+        <option selected>Selecionar Coleção</option>
+        <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async"> {{colecoes.nome}}</option>
+      </select>
+    </div>
+    <div id="terceiralinha">
+      <div>
+        <span>Possui bordado? </span> <br>
+        <span>Sim </span>
+        <input type="checkbox" formControlName="bordado">
+        <span>Não </span>
+        <input type="checkbox" formControlName="bordadoNao">
+      </div>
+      <div>
+        <span>Possui estampa? </span> <br>
+        <span>Sim </span>
+        <input type="checkbox" value="true" formControlName="estampa">
+        <span>Não </span>
+        <input type="checkbox" formControlName="estampaNao">
+      </div>
+    </div>
+    <div id="botoes">
+      <div><button *ngIf="this.form.value.id" type="button" class="btn btn-danger" (click)="onDelete()">Excluir</button>
+      </div>
+      <div>
+        <button style="margin-right:10px ;" type="button" class="btn btn-outline-secondary"
+          (click)="onCancel()">Cancelar</button>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
+      </div>
+    </div>
+  </form>

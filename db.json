@@ -1,37 +1,59 @@
 {
   "modelos": [
     {
-      "id": 2,
-      "nome": "Modelo 2",
-      "responsavel": "Thiago",
+      "id": 6,
+      "nome": "Bermuda",
+      "responsavel": "Felipe",
       "tipo": "bermuda",
+      "colecao": "Verão",
+      "bordado": null,
+      "estampa": true,
+      "bordadoNao": true,
+      "estampaNao": null
+    },
+    {
+      "id": 7,
+      "nome": "sandalha",
+      "responsavel": "vanessa",
+      "tipo": "calçados",
+      "colecao": "Verão",
+      "bordado": false,
+      "estampa": false,
+      "bordadoNao": true,
+      "estampaNao": true
+    },
+    {
+      "id": 8,
+      "nome": "bone",
+      "responsavel": "thiago",
+      "tipo": "boné",
       "colecao": "Coleção 2",
+      "bordado": true,
+      "estampa": true,
+      "bordadoNao": null,
+      "estampaNao": null
+    },
+    {
+      "id": 9,
+      "nome": "saia",
+      "responsavel": "vanessa",
+      "tipo": "saia",
+      "colecao": "Verão",
+      "bordado": true,
+      "estampa": true,
+      "bordadoNao": null,
+      "estampaNao": null
+    },
+    {
+      "id": 10,
+      "nome": "calça",
+      "responsavel": "Pedro",
+      "tipo": "calça",
+      "colecao": "Inverno",
       "bordado": true,
       "estampa": null,
       "bordadoNao": null,
-      "estampaNao": null
-    },
-    {
-      "id": 4,
-      "nome": "dasdsa",
-      "responsavel": "adsadas",
-      "tipo": "bermuda",
-      "colecao": "Coleção 2",
-      "bordado": true,
-      "estampa": true,
-      "bordadoNao": null,
-      "estampaNao": null
-    },
-    {
-      "id": 5,
-      "nome": "dasdsa",
-      "responsavel": "dsadas",
-      "tipo": "camisa",
-      "colecao": "Coleção 2",
-      "bordado": true,
-      "estampa": true,
-      "bordadoNao": null,
-      "estampaNao": null
+      "estampaNao": true
     }
   ],
   "colecoes": [
@@ -61,6 +83,24 @@
       "marca": "Renner",
       "anoLancamento": 2023,
       "orcamento": 37000
+    },
+    {
+      "id": 4,
+      "nome": "Inverno",
+      "estacao": "Inverno",
+      "responsavel": "Vanessa",
+      "marca": "Adidas",
+      "anoLancamento": 2023,
+      "orcamento": 17000
+    },
+    {
+      "id": 5,
+      "nome": "Verão",
+      "estacao": "Verão",
+      "responsavel": "João",
+      "marca": "Renner",
+      "anoLancamento": 2024,
+      "orcamento": 5000
     }
   ]
 }

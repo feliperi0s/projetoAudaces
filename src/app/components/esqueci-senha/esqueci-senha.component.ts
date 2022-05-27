@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-esqueci-senha',
@@ -8,13 +9,23 @@ import { RouterLink } from '@angular/router';
 })
 export class EsqueciSenhaComponent implements OnInit {
 
-  constructor() { }
+  public form!:FormGroup
+
+  constructor( private _formBuilder:FormBuilder,private router: Router) { }
 
   ngOnInit(): void {
+    this.form = this._formBuilder.group({
+      login:["",[Validators.required,Validators.email]],
+    })
   }
 
-  enviarEmail(){
-    alert('Novo senha enviada com sucesso!')
+  onSubmit(){
+    if(this.form.valid){
+      this.router.navigate([''])
+      alert('Nova senha enviada com sucesso!')}
+  else {
+    alert("Por Favor , Verifique se o e-mail está correto")
+  }
   }
 
 }

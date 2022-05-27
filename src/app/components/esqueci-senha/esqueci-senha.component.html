@@ -11,12 +11,11 @@
             <div class="d-flex justify-content-center" >
                 <p id="text">Digite o e-mail associado à sua conta e <br> enviaresmos instruções para redefinir sua <br> senha.</p>
                 </div>
-        <div class="d-flex justify-content-center" >
+        <div class="d-flex justify-content-center" [formGroup]="form" >
           <input type="email"  formControlName="login" placeholder="Informe seu e-mail">
         </div>
         <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary" (click)="enviarEmail()" [routerLink]="['']"
-            >Enviar Recuperação</button>
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()">Enviar Recuperação</button>
         </div>
     </div>
 </form>

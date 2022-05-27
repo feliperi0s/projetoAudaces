@@ -1,26 +1,13 @@
 {
   "modelos": [
     {
-      "id": 6,
-      "nome": "Bermuda",
-      "responsavel": "Felipe",
-      "tipo": "bermuda",
-      "colecao": "Verão",
-      "bordado": null,
-      "estampa": true,
-      "bordadoNao": true,
-      "estampaNao": null
-    },
-    {
       "id": 7,
       "nome": "sandalha",
       "responsavel": "vanessa",
       "tipo": "calçados",
       "colecao": "Verão",
-      "bordado": false,
-      "estampa": false,
-      "bordadoNao": true,
-      "estampaNao": true
+      "bordado": "yes",
+      "estampa": "yes"
     },
     {
       "id": 8,
@@ -28,10 +15,8 @@
       "responsavel": "thiago",
       "tipo": "boné",
       "colecao": "Coleção 2",
-      "bordado": true,
-      "estampa": true,
-      "bordadoNao": null,
-      "estampaNao": null
+      "bordado": "yes",
+      "estampa": "no"
     },
     {
       "id": 9,
@@ -57,25 +42,12 @@
     },
     {
       "id": 11,
-      "nome": "asdsad",
-      "responsavel": "asdsad",
+      "nome": "Bermuda",
+      "responsavel": "Felipe",
       "tipo": "bermuda",
       "colecao": "Coleção 2",
-      "bordado": "true",
-      "estampa": null,
-      "bordadoNao": null,
-      "estampaNao": null
-    },
-    {
-      "id": 12,
-      "nome": "asdasd",
-      "responsavel": "asdasd",
-      "tipo": "biquíni",
-      "colecao": "Verão",
-      "bordado": "yes",
-      "estampa": "no",
-      "bordadoNao": null,
-      "estampaNao": null
+      "bordado": "no",
+      "estampa": "no"
     }
   ],
   "colecoes": [

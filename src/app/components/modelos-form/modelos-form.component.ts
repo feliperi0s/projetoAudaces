@@ -36,8 +36,6 @@ export class ModelosFormComponent implements OnInit {
       colecao: ["Selecionar Coleção", [Validators.required]],
       bordado: [],
       estampa: [],
-      bordadoNao: [],
-      estampaNao: [],
     });
     this._route.params.subscribe(
       (params: any) => {

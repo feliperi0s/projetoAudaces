@@ -2,10 +2,6 @@
     margin: 0px;
 }
 
-h1 {
-    padding: 15px;
-    font-size: 1.5em;
-}
 
 .table{
     text-align: center;
@@ -13,4 +9,17 @@ h1 {
 
 td {
     cursor: pointer;
+}
+
+.header{
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+table{
+    margin-top: 100px;
+}
+
+th{
+    list-style: none;
 }

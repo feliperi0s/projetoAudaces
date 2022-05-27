@@ -27,17 +27,17 @@
     <div id="terceiralinha">
       <div>
         <span>Possui bordado? </span> <br>
-        <span>Sim </span>
-        <input type="checkbox" formControlName="bordado">
-        <span>Não </span>
-        <input type="checkbox" formControlName="bordadoNao">
+        <input formControlName="bordado" type="radio" id="yes" name="bordado" value="yes">
+        <label for="yes">Sim</label><br>
+        <input formControlName="bordado" type="radio" id="no" name="bordado" value="no">
+        <label for="no">Não</label><br> 
       </div>
       <div>
         <span>Possui estampa? </span> <br>
-        <span>Sim </span>
-        <input type="checkbox" value="true" formControlName="estampa">
-        <span>Não </span>
-        <input type="checkbox" formControlName="estampaNao">
+        <input formControlName="estampa" type="radio" id="yes" name="estampa" value="yes">
+        <label for="yes">Sim</label><br>
+        <input formControlName="estampa" type="radio" id="no" name="estampa" value="no">
+        <label for="no">Não</label><br> 
       </div>
     </div>
     <div id="botoes">

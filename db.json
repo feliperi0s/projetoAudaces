@@ -35,25 +35,47 @@
     },
     {
       "id": 9,
-      "nome": "saia",
+      "nome": "saias",
       "responsavel": "vanessa",
       "tipo": "saia",
       "colecao": "Verão",
       "bordado": true,
-      "estampa": true,
+      "estampa": null,
       "bordadoNao": null,
       "estampaNao": null
     },
     {
       "id": 10,
       "nome": "calça",
-      "responsavel": "Pedro",
+      "responsavel": "vanessa",
       "tipo": "calça",
-      "colecao": "Inverno",
+      "colecao": "Coleção 1",
       "bordado": true,
+      "estampa": true,
+      "bordadoNao": null,
+      "estampaNao": null
+    },
+    {
+      "id": 11,
+      "nome": "asdsad",
+      "responsavel": "asdsad",
+      "tipo": "bermuda",
+      "colecao": "Coleção 2",
+      "bordado": "true",
       "estampa": null,
       "bordadoNao": null,
-      "estampaNao": true
+      "estampaNao": null
+    },
+    {
+      "id": 12,
+      "nome": "asdasd",
+      "responsavel": "asdasd",
+      "tipo": "biquíni",
+      "colecao": "Verão",
+      "bordado": "yes",
+      "estampa": "no",
+      "bordadoNao": null,
+      "estampaNao": null
     }
   ],
   "colecoes": [

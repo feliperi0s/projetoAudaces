@@ -5,6 +5,6 @@ export interface Modelos {
     colecao:any,
     responsavel:string
     tipo:string,
-    bordado:boolean,
-    estampado:boolean
+    bordado:string,
+    estampado:string
 }

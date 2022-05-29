@@ -25,6 +25,11 @@ Faça o clone via github, você terá que ter o Angular CLI instalado em sua maq
 
 ## Exemplo da Aplicação
 <img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo01.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo02.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo03.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo04.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo05.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo06.PNG?raw=true' alt='Exemplo'>
 
 Todo feedback é bem-vindo. 
 

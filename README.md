@@ -24,7 +24,7 @@
 Faça o clone via github, você terá que ter o Angular CLI instalado em sua maquina e o plugin json-server. Rodar no terminal o comando NG SERVE para rodar a aplicação e json-server --watch db.json, para rodar a fakeAPI.
 
 ## Exemplo da Aplicação
-<img src='https://github.com/feliperi0s/Projeto01/blob/main/listadecompras.PNG' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo01.PNG?raw=true' alt='Exemplo'>
 
 Todo feedback é bem-vindo. 
 

@@ -48,6 +48,24 @@
       "colecao": "Coleção 2",
       "bordado": "no",
       "estampa": "no"
+    },
+    {
+      "id": 12,
+      "nome": "Chapéu de palha",
+      "responsavel": "Thiago",
+      "tipo": "boné",
+      "colecao": "Verão",
+      "bordado": "yes",
+      "estampa": "yes"
+    },
+    {
+      "id": 13,
+      "nome": "Calção",
+      "responsavel": "Felipe",
+      "tipo": "bermuda",
+      "colecao": "Coleção 1",
+      "bordado": "no",
+      "estampa": "yes"
     }
   ],
   "colecoes": [
@@ -95,6 +113,24 @@
       "marca": "Renner",
       "anoLancamento": 2024,
       "orcamento": 5000
+    },
+    {
+      "id": 6,
+      "nome": "Primavera",
+      "estacao": "Primavera",
+      "responsavel": "Felipe",
+      "marca": "Nike",
+      "anoLancamento": 2023,
+      "orcamento": 15000
+    },
+    {
+      "id": 7,
+      "nome": "Outono Inverno",
+      "estacao": "Outono Inverno",
+      "responsavel": "Vanessa",
+      "marca": "renner",
+      "anoLancamento": 2024,
+      "orcamento": 27000
     }
   ]
 }

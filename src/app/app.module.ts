@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -15,6 +14,11 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ColecaoValorComponent } from './components/colecao-valor/colecao-valor.component';
 import { ContentComponent } from './components/content/content.component';
+
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -36,7 +40,7 @@ import { ContentComponent } from './components/content/content.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: "pt-BR" }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

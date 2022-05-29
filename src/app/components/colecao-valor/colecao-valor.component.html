@@ -11,7 +11,7 @@
       <tr *ngFor="let colecoes of colecao$.slice(0,5)">
         <td id="id">{{colecoes.id}}</td>
         <td class="fraco">{{colecoes.nome}}</td>
-        <td class="fraco">{{colecoes.orcamento}}</td>
+        <td class="fraco">{{colecoes.orcamento | currency:'BRL'}}</td>
         <td class="fraco">{{colecoes.responsavel}}</td>
       </tr>
     </tbody>

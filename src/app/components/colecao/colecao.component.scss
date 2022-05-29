@@ -22,8 +22,12 @@ td {
 
 table{
     margin-top: 100px;
+    border-collapse: separate;
 }
 
 th{
     list-style: none;
+}
+#strong{
+    font-weight: 600;
 }

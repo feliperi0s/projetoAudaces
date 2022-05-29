@@ -10,7 +10,7 @@
       
       <table class="table table-hover">
           <thead>
-            <tr>
+            <tr id="strong">
               <td scope="col">ColecaoID</td>
               <td scope="col">Nome da Colecao</td>
               <td scope="col">Estacao e Lançamento</td>
@@ -19,7 +19,7 @@
           </thead>
           <tbody>
             <tr *ngFor="let colecoes of colecao$ |async" (click)="onEditi(colecoes.id)">
-              <td scope="row">{{colecoes.id}}</td>
+              <td><strong>{{colecoes.id}}</strong></td>
               <td>{{colecoes.nome}}</td>
               <td>{{colecoes.estacao}}-{{colecoes.anoLancamento}}</td>
               <td>{{colecoes.responsavel}}</td>

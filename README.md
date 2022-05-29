@@ -1,27 +1,32 @@
-# ProjetoAudaces
+# Audaces Manager Projeto DEVInHouse
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+## Objetivos do Projeto
 
-## Development server
+1 - Uma tela de Dashboard contendo 3 cards: Total de coleções (Exibir o total de coleções cadastradas no json-server) , modelos (Exibir total de modelos) e média de orçamento por coleção (Soma de todos os orçamentos das coleções / total de coleções).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2 - A tela  de Dashboard deve conter uma tabela contendo os 5 maiores orçamentos dentre as coleções, a tabela deve ser formada pelas colunas de Código da Coleção (ColeçãoID), Nome da Coleção, Orçamento e Responsável, ela deve estar ordenada do maior para o menor valor em orçamento.
 
-## Code scaffolding
+3 - Uma tela de Listagem de Coleções (consumir rota /colecoes do json-server) contendo uma tabela com as colunas ColecaoID, nome da coleção, estação + lançamento (deve ser um dado combinado entre as propriedades) e responsável, além do botão Criar Coleção que redireciona o usuário para tela de cadastro de coleção. Além disso, as linhas da tabela deverão ser clicáveis e o clique na linha deve redirecionar o usuário para Editar Coleção. Seguir layout conforme o mockup disponibilizado.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4 - Uma tela de Cadastro de Coleção, contendo um formulário com os campos nome, responsável, estação, marca, orçamento e ano de lançamento . Ao clicar no botão salvar, chamar evento de onSubmit e cadastrar unidade via POST na rota /colecoes do json-server, o botão “Cancelar” fará com o que o usuário seja enviado para Listagem de Coleções. Todos os campos do formulário são obrigatórios. Seguir layout conforme o mockup disponibilizado.
 
-## Build
+5 - Uma tela de Edição de Coleção, contendo um formulário com os campos nome, responsável, estação, marca, orçamento e ano de lançamento. Essa tela precisa receber um parâmetro na rota para identificar que coleção o usuário deseja editar, mostrar no formulário os dados da coleção ao carregar as informações sobre ela. Ao clicar no botão salvar, chamar evento de onSubmit e atualizar a unidade via PUT na rota /colecoes/:id do json-server, o botão “Cancelar” fará com o que o usuário seja enviado para Listagem de Coleções. Todos os campos do formulário são obrigatórios. Seguir layout conforme o mockup disponibilizado.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+6 - Uma tela de Listagem de Modelos (consumir rota /modelos do json-server) contendo uma tabela com as colunas ModeloID, nome do modelo, coleção relacionada e responsável, além do botão Criar Modelo que redireciona o usuário para tela de cadastro de modelo. Além disso, as linhas da tabela deverão ser clicáveis e o clique na linha deve redirecionar o usuário para Editar Modelo. Seguir layout conforme o mockup disponibilizado.
 
-## Running unit tests
+7 - Uma tela de Cadastro de Modelos, contendo um formulário com os campos nome, responsável, tipo (tag select do HTML com as opções: bermuda, biquíni, bolsa, boné, calça, calçados, camisa, chapéu, saia.), coleção relacionada (listar todas as coleções cadastradas no json-server) e dois “radio group” para verificar se o modelo possui bordado e se possui estampa. Ao clicar no botão salvar, chamar evento de onSubmit e cadastrar unidade via POST na rota /modelos do json-server, o botão “Cancelar” fará com o que o usuário seja enviado para Listagem de Modelos. Todos os campos do formulário são obrigatórios. Seguir layout conforme o mockup disponibilizado.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+8 - Uma tela de Edição de Modelos, contendo um formulário com os mesmos campos presentes no Cadastro de Modelos. Essa tela precisa receber um parâmetro na rota para identificar que modelo o usuário deseja editar, mostrar no formulário os dados do modelo ao carregar as informações sobre ele. Ao clicar no botão salvar, chamar evento de onSubmit e atualizar a unidade via PUT na rota /modelos/:id do json-server, o botão “Cancelar” fará com o que o usuário seja enviado para Listagem de Modelos, além disso um botão Excluir deverá aparecer na tela e o clique será chamado o método DELETE na rota /modelos/:id para remover o modelo, ao fim da exclusão retornar o usuário para “Listagem de Modelos”. Todos os campos do formulário são obrigatórios. Seguir layout conforme o mockup disponibilizado.
+ 
 
-## Running end-to-end tests
+## Como rodar a aplicação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Faça o clone via github, você terá que ter o Angular CLI instalado em sua maquina e o plugin json-server. Rodar no terminal o comando NG SERVE para rodar a aplicação e json-server --watch db.json, para rodar a fakeAPI.
 
-## Further help
+## Exemplo da Aplicação
+<img src='https://github.com/feliperi0s/Projeto01/blob/main/listadecompras.PNG' alt='Exemplo'>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Todo feedback é bem-vindo. 
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

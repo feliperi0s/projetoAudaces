@@ -19,11 +19,11 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let modelo of modelos$ | async" (click)="onEditi(modelo.id)">
-            <td><strong>{{modelo.id}}</strong></td>
-            <td>{{modelo.nome}}</td>
-            <td>{{modelo.colecao}}</td>
-            <td>{{modelo.responsavel}}</td>
+          <tr *ngFor="let model of models$ | async" (click)="onEditi(model.id)">
+            <td><strong>{{model.id}}</strong></td>
+            <td>{{model.nome}}</td>
+            <td>{{model.colecao}}</td>
+            <td>{{model.responsavel}}</td>
           </tr>
         </tbody>
       </table>

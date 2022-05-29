@@ -10,15 +10,15 @@ import { ColecaoService } from 'src/app/_servicos/colecao.service';
 })
 export class ColecaoValorComponent implements OnInit {
 
-  public colecao$!:Colecao[]
+  public colecao$!: Colecao[]
 
 
-  constructor( private _colecaoService:ColecaoService) { }
+  constructor(private _colecaoService: ColecaoService) { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
     this._colecaoService.getColecao().subscribe(
-      retorno => {
-        this.colecao$ = retorno.sort((a,b)=> {
+      turns => {
+        this.colecao$ = turns.sort((a, b) => {
           return b.orcamento - a.orcamento
         })
       }

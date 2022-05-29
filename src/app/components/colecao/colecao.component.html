@@ -2,30 +2,31 @@
   <div class="row">
     <div class="col">
       <div class="header">
-          <div class="d-flex justify-content-between">
-            <div class="p-2 bd-highlight">Coleções</div>
-              <button class="btn btn-primary me-md-2" type="button" [routerLink]="['/logado/novaColecao']">Criar Coleção</button>
-          </div>
+        <div class="d-flex justify-content-between">
+          <div class="p-2 bd-highlight">Coleções</div>
+          <button class="btn btn-primary me-md-2" type="button" [routerLink]="['/logado/novaColecao']">Criar
+            Coleção</button>
+        </div>
       </div>
-      
+
       <table class="table table-hover">
-          <thead>
-            <tr id="strong">
-              <td scope="col">ColecaoID</td>
-              <td scope="col">Nome da Colecao</td>
-              <td scope="col">Estacao e Lançamento</td>
-              <td scope="col">Responsavel</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let colecoes of colecao$ |async" (click)="onEditi(colecoes.id)">
-              <td><strong>{{colecoes.id}}</strong></td>
-              <td>{{colecoes.nome}}</td>
-              <td>{{colecoes.estacao}}-{{colecoes.anoLancamento}}</td>
-              <td>{{colecoes.responsavel}}</td>
-            </tr>
-          </tbody>
-        </table>
+        <thead>
+          <tr id="strong">
+            <td scope="col">ColecaoID</td>
+            <td scope="col">Nome da Colecao</td>
+            <td scope="col">Estacao e Lançamento</td>
+            <td scope="col">Responsavel</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let colections of colection$ |async" (click)="onEditi(colections.id)">
+            <td><strong>{{colections.id}}</strong></td>
+            <td>{{colections.nome}}</td>
+            <td>{{colections.estacao}}-{{colections.anoLancamento}}</td>
+            <td>{{colections.responsavel}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

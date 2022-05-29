@@ -17,32 +17,32 @@ export class ModelosFormComponent implements OnInit {
 
   public form!: FormGroup
   public submitted = false
-  public colecao$!: Observable<Colecao[]>
-  public modelos$!: Observable<Modelos[]>
+  public colection$!: Observable<Colecao[]>
+  public models$!: Observable<Modelos[]>
 
 
 
   constructor(private _formBuilder: FormBuilder, private _modeloService: ModelosService, private _route: ActivatedRoute, public _colecaoService: ColecaoService, private _location: Location) { }
 
   ngOnInit(): void {
-    this.modelos$ = this._modeloService.getModelos()
-    this.colecao$ = this._colecaoService.getColecao()
-    let registro = null
+    this.models$ = this._modeloService.getModelos()
+    this.colection$ = this._colecaoService.getColecao()
+    let record = null
     this.form = this._formBuilder.group({
       id: null,
       nome: [null, [Validators.required, Validators.minLength(3)]],
       responsavel: [null, [Validators.required]],
       tipo: ["Tipo do modelo", [Validators.required]],
       colecao: ["Selecionar Coleção", [Validators.required]],
-      bordado: [],
-      estampa: [],
+      bordado: [null],
+      estampa: [null],
     });
     this._route.params.subscribe(
       (params: any) => {
         const id = params['id'];
-        const modelos$ = this._modeloService.loadById(id);
-        modelos$.subscribe(modelo => {
-          registro = modelo;
+        const models$ = this._modeloService.loadById(id);
+        models$.subscribe(modelo => {
+          record = modelo;
           this.updateForm(modelo)
         }
 
@@ -62,7 +62,7 @@ export class ModelosFormComponent implements OnInit {
           success => console.log('sucess'),
           () => console.log('erro')
         )
-        this._location.back()        
+        this._location.back()
       } else {
         this._modeloService.postModelos(this.form.value).subscribe()
         this._location.back()

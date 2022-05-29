@@ -11,12 +11,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ColecaoComponent implements OnInit {
 
-  public colecao$!:Observable<Colecao[]>
+  public colection$!:Observable<Colecao[]>
 
   constructor(private _colecaoService:ColecaoService,private _router:Router,private _rout:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.colecao$ = this._colecaoService.getColecao()
+    this.colection$ = this._colecaoService.getColecao()
   }
 
   onEditi(id:number){

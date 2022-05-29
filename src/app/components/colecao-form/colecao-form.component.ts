@@ -14,73 +14,73 @@ import { Location } from '@angular/common';
 })
 export class ColecaoFormComponent implements OnInit {
 
-  public form!:FormGroup
+  public form!: FormGroup
   public submitted = false
-  public colecao$!:Observable<Colecao[]>
+  public colection$!: Observable<Colecao[]>
 
-  constructor(private _formBuilder:FormBuilder, private _colecaoService :ColecaoService, private _route:ActivatedRoute, private _location :Location) { }
+  constructor(private _formBuilder: FormBuilder, private _colecaoService: ColecaoService, private _route: ActivatedRoute, private _location: Location) { }
 
   ngOnInit(): void {
-    this.colecao$ = this._colecaoService.getColecao()
-    let registro = null
+    this.colection$ = this._colecaoService.getColecao()
+    let record = null
     this.form = this._formBuilder.group({
       id: null,
-      nome:["",[Validators.required]],
-      estacao:["",[Validators.required]],
-      responsavel:["",[Validators.required]],
-      marca:["",[Validators.required]],
-      anoLancamento:[false,[Validators.required]],
-      orcamento:[false,[Validators.required]]
+      nome: ["", [Validators.required]],
+      estacao: ["", [Validators.required]],
+      responsavel: ["", [Validators.required]],
+      marca: ["", [Validators.required]],
+      anoLancamento: [false, [Validators.required]],
+      orcamento: [false, [Validators.required]]
     });
     this._route.params.subscribe(
       (params: any) => {
         const id = params['id'];
-         const colecao$ = this._colecaoService.loadById(id);
-         colecao$.subscribe( colecao => {
-           registro = colecao;
-           this.updateForm(colecao)
-         }
+        const colection$ = this._colecaoService.loadById(id);
+        colection$.subscribe(colecao => {
+          record = colecao;
+          this.updateForm(colecao)
+        }
 
-         )
+        )
       }
     )
   }
 
-  public onSubmit(){
-    
+  public onSubmit() {
+
     this.submitted = true
-    if(this.form.valid){
-      
-      if(this.form.value.id){
+    if (this.form.valid) {
+
+      if (this.form.value.id) {
         this._colecaoService.update(this.form.value).subscribe(
           success => console.log('sucess'),
           () => console.log('erro')
         )
         this._location.back()
-      }else {
+      } else {
         this._colecaoService.postModelos(this.form.value).subscribe()
         this._location.back()
       }
-    }  
+    }
   }
 
-  public updateForm(colecao:any){
+  public updateForm(colecao: any) {
     this.form.patchValue({
-      id : colecao.id,
+      id: colecao.id,
       nome: colecao.nome,
       estacao: colecao.estacao,
-      responsavel:colecao.responsavel,
+      responsavel: colecao.responsavel,
       marca: colecao.marca,
       anoLancamento: colecao.anoLancamento,
       orcamento: colecao.orcamento
     })
   }
 
-  public onCancel(){
+  public onCancel() {
     this.submitted = false;
-    if(this.form.value.id){
+    if (this.form.value.id) {
       this._location.back()
-    }else {
+    } else {
       this.form.reset();
       this._location.back()
     }

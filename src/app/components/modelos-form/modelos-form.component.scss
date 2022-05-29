@@ -1,17 +1,17 @@
-.container{
+.container {
     margin: 0%;
     margin-left: 50px;
 }
 
 
-#primeiralinha input{
+#firstLine input {
     width: 250px;
     border: 1px solid rgba(128, 128, 128, 0.244);
     border-radius: 3px;
     padding: 5px;
 }
 
-#primeiralinha {
+#firstLine {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,11 +19,11 @@
     margin-top: 50px;
 }
 
-select{
+select {
     width: 250px;
 }
 
-#segundalinha {
+#secontLine {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,16 +31,17 @@ select{
     margin-top: 50px;
 }
 
-#terceiralinha{
+#thirdLine {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
-#terceiralinha div {
+
+#thirdLine div {
     width: 350px;
 }
 
-#botoes{
+#buttons {
     display: flex;
     justify-content: space-between;
     width: 700px;
@@ -49,6 +50,6 @@ select{
 
 }
 
-#botoes button{
+#buttons button {
     width: 150px;
 }

@@ -9,23 +9,24 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class EsqueciSenhaComponent implements OnInit {
 
-  public form!:FormGroup
+  public form!: FormGroup
 
-  constructor( private _formBuilder:FormBuilder,private router: Router) { }
+  constructor(private _formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
     this.form = this._formBuilder.group({
-      login:["",[Validators.required,Validators.email]],
+      login: ["", [Validators.required, Validators.email]],
     })
   }
 
-  onSubmit(){
-    if(this.form.valid){
+  onSubmit() {
+    if (this.form.valid) {
       this.router.navigate([''])
-      alert('Nova senha enviada com sucesso!')}
-  else {
-    alert("Por Favor , Verifique se o e-mail está correto")
-  }
+      alert('Nova senha enviada com sucesso!')
+    }
+    else {
+      alert("Por Favor , Verifique se o e-mail está correto")
+    }
   }
 
 }

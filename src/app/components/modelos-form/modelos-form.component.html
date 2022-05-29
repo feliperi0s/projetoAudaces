@@ -2,11 +2,11 @@
   <form class="needs-validation" [formGroup]="form">
     <h1 *ngIf="this.form.value.id">Editar modelo</h1>
     <h1 *ngIf="this.form.value.id == null">Criar modelo</h1>
-    <div id="primeiralinha">
+    <div id="firstLine">
       <input type="text" placeholder="Modelo" formControlName="nome" required>
       <input type="text" placeholder="Responsavel" formControlName="responsavel" required>
     </div>
-    <div id="segundalinha">
+    <div id="secontLine">
       <select formControlName="tipo" class="form-select" required>
         <option selected>Tipo do modelo</option>
         <option value="bermuda">Bermuda</option>
@@ -21,26 +21,26 @@
       </select>
       <select class="form-select" formControlName="colecao" required>
         <option selected>Selecionar Coleção</option>
-        <option value="{{colecoes.nome}}" *ngFor="let colecoes of colecao$ |async"> {{colecoes.nome}}</option>
+        <option value="{{colecoes.nome}}" *ngFor="let colecoes of colection$ |async"> {{colecoes.nome}}</option>
       </select>
     </div>
-    <div id="terceiralinha">
+    <div id="thirdLine">
       <div>
         <span>Possui bordado? </span> <br>
         <input formControlName="bordado" type="radio" id="yes1" name="bordado" value="yes">
         <label for="yes1">Sim</label><br>
         <input formControlName="bordado" type="radio" id="no1" name="bordado" value="no">
-        <label for="no1">Não</label><br> 
+        <label for="no1">Não</label><br>
       </div>
       <div>
         <span>Possui estampa? </span> <br>
         <input formControlName="estampa" type="radio" id="yes" name="estampa" value="yes">
         <label for="yes">Sim</label><br>
         <input formControlName="estampa" type="radio" id="no" name="estampa" value="no">
-        <label for="no">Não</label><br> 
+        <label for="no">Não</label><br>
       </div>
     </div>
-    <div id="botoes">
+    <div id="buttons">
       <div><button *ngIf="this.form.value.id" type="button" class="btn btn-danger" (click)="onDelete()">Excluir</button>
       </div>
       <div>

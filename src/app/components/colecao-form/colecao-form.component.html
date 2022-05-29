@@ -11,13 +11,13 @@
             <input type="text" formControlName="marca" placeholder="Para qual marca vocês está criando?">
         </div>
         <div>
-            <input type="number | currency: BRL" formControlName="orcamento" placeholder="Qual o orçamento dessa coleção?">
+            <input type="number" formControlName="orcamento" placeholder="Qual o orçamento dessa coleção?">
             <input type="number" formControlName="anoLancamento" placeholder="Ano de lançamento">
         </div>
     </form>
-    <div class="imagem"><img src="../../../assets/images/editcolecao.png" alt=""></div>
+    <div class="image"><img src="../../../assets/images/editcolecao.png" alt=""></div>
 
-    <div class="d-flex flex-row-reverse" id="botoes">
+    <div class="d-flex flex-row-reverse" id="buttons">
         <button type="submit" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
         <button type="button" class="btn btn-outline-secondary" (click)="onCancel()">Cancelar</button>
     </div>

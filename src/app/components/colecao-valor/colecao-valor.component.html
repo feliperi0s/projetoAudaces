@@ -1,18 +1,18 @@
-<table class="table" >
-    <thead>
-      <tr>
-        <td scope="col">ColecaoID</td>
-        <td scope="col">Nome da Colecão</td>
-        <td scope="col">Orçamento</td>
-        <td scope="col">Responsável</td>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let colecoes of colecao$.slice(0,5)">
-        <td id="id">{{colecoes.id}}</td>
-        <td class="fraco">{{colecoes.nome}}</td>
-        <td class="fraco">{{colecoes.orcamento | currency:'BRL'}}</td>
-        <td class="fraco">{{colecoes.responsavel}}</td>
-      </tr>
-    </tbody>
-  </table>
+<table class="table">
+  <thead>
+    <tr>
+      <td scope="col">ColecaoID</td>
+      <td scope="col">Nome da Colecão</td>
+      <td scope="col">Orçamento</td>
+      <td scope="col">Responsável</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let colecoes of colecao$.slice(0,5)">
+      <td id="id">{{colecoes.id}}</td>
+      <td class="weak">{{colecoes.nome}}</td>
+      <td class="weak">{{colecoes.orcamento | currency:'BRL'}}</td>
+      <td class="weak">{{colecoes.responsavel}}</td>
+    </tr>
+  </tbody>
+</table>

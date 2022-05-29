@@ -9,25 +9,26 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  public form!:FormGroup
+  public form!: FormGroup
 
 
-  constructor( private _formBuilder:FormBuilder,private router: Router ) { }
+  constructor(private _formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
     this.form = this._formBuilder.group({
-      login:["",[Validators.required,Validators.email]],
-      senha:["",[Validators.required,Validators.minLength(6)]],
+      login: ["", [Validators.required, Validators.email]],
+      senha: ["", [Validators.required, Validators.minLength(6)]],
     })
   }
 
-  onSubmit(){
-    if(this.form.valid){
-      this.router.navigate(['/logado/home'])}
-  else {
-    alert("Por Favor , Verifique se o login e senha estão corretos")
+  onSubmit() {
+    if (this.form.valid) {
+      this.router.navigate(['/logado/home'])
+    }
+    else {
+      alert("Por Favor , Verifique se o login e senha estão corretos")
+    }
   }
-      }
 
 
 }

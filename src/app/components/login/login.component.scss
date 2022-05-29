@@ -1,42 +1,43 @@
-div{
+div {
     padding: 10px;
 }
 
-button{
+button {
     width: 350px;
     border-style: none;
 }
 
-input{
+input {
     width: 340px;
     border: 1px solid rgba(0, 0, 0, 0.222);
     border-radius: 5px;
     padding: 7px;
 }
-#sign{
+
+#sign {
     font-size: 1.7em;
     font-weight: 500;
 }
 
-.text{
+.text {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #989898; 
+    color: #989898;
     font-family: 'Inter', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     font-weight: bold;
 }
 
-.content{
+.content {
     background-color: #F2F5FF;
     min-height: 657px;
 }
 
-#login{
+#login {
     background-color: #FFFFFF;
     width: 480px;
     height: 407px;
@@ -44,11 +45,11 @@ a{
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.444);
 }
 
-#imagem{
+#image {
     margin-top: 30px;
 }
 
-#esqueciSenha{
+#forgotPassword {
     color: #0073CF;
     cursor: pointer;
 }

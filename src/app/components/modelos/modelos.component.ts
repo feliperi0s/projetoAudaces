@@ -11,25 +11,25 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ModelosComponent implements OnInit {
 
-  public modelos$!:Observable<Modelos[]>
+  public models$!: Observable<Modelos[]>
 
-  constructor( private _modeloService:ModelosService,private _router:Router,private _rout:ActivatedRoute) { }
+  constructor(private _modeloService: ModelosService, private _router: Router, private _rout: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.modelos$ = this._modeloService.getModelos()
+    this.models$ = this._modeloService.getModelos()
   }
 
-  onEditi(id:number){
-    this._router.navigate(['logado/editarModelo',id]),{relativeTo:this._rout}
+  onEditi(id: number) {
+    this._router.navigate(['logado/editarModelo', id]), { relativeTo: this._rout }
   }
 
-  onDelete(modelo:Modelos){
+  onDelete(modelo: Modelos) {
     this._modeloService.remove(modelo.id).subscribe();
     this.onRefresch()
 
-     }
+  }
 
-  onRefresch(){
+  onRefresch() {
     window.location.reload()
   }
 }

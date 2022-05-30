@@ -4,10 +4,10 @@ import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-esqueci-senha',
-  templateUrl: './esqueci-senha.component.html',
-  styleUrls: ['./esqueci-senha.component.scss']
+  templateUrl: './reset-password.component.html',
+  styleUrls: ['./reset-password.component.scss']
 })
-export class EsqueciSenhaComponent implements OnInit {
+export class ResetPasswordComponent implements OnInit {
 
   public form!: FormGroup
 

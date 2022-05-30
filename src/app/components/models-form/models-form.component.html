@@ -3,11 +3,11 @@
     <h1 *ngIf="this.form.value.id">Editar modelo</h1>
     <h1 *ngIf="this.form.value.id == null">Criar modelo</h1>
     <div id="firstLine">
-      <input type="text" placeholder="Modelo" formControlName="nome" required>
-      <input type="text" placeholder="Responsavel" formControlName="responsavel" required>
+      <input type="text" placeholder="Modelo" formControlName="name" required>
+      <input type="text" placeholder="Responsavel" formControlName="responsible" required>
     </div>
     <div id="secontLine">
-      <select formControlName="tipo" class="form-select" required>
+      <select formControlName="type" class="form-select" required>
         <option selected>Tipo do modelo</option>
         <option value="bermuda">Bermuda</option>
         <option value="biquíni">Biquíni</option>
@@ -19,24 +19,24 @@
         <option value="chapéu">Chapéu</option>
         <option value="saia">Saia</option>
       </select>
-      <select class="form-select" formControlName="colecao" required>
+      <select class="form-select" formControlName="collection" required>
         <option selected>Selecionar Coleção</option>
-        <option value="{{colecoes.nome}}" *ngFor="let colecoes of colection$ |async"> {{colecoes.nome}}</option>
+        <option value="{{collections.name}}" *ngFor="let collections of collection$ |async"> {{collections.name}}</option>
       </select>
     </div>
     <div id="thirdLine">
       <div>
         <span>Possui bordado? </span> <br>
-        <input formControlName="bordado" type="radio" id="yes1" name="bordado" value="yes">
+        <input formControlName="embroidery" type="radio" id="yes1" name="embroidery" value="yes">
         <label for="yes1">Sim</label><br>
-        <input formControlName="bordado" type="radio" id="no1" name="bordado" value="no">
+        <input formControlName="embroidery" type="radio" id="no1" name="embroidery" value="no">
         <label for="no1">Não</label><br>
       </div>
       <div>
         <span>Possui estampa? </span> <br>
-        <input formControlName="estampa" type="radio" id="yes" name="estampa" value="yes">
+        <input formControlName="patterned" type="radio" id="yes" name="patterned" value="yes">
         <label for="yes">Sim</label><br>
-        <input formControlName="estampa" type="radio" id="no" name="estampa" value="no">
+        <input formControlName="patterned" type="radio" id="no" name="patterned" value="no">
         <label for="no">Não</label><br>
       </div>
     </div>

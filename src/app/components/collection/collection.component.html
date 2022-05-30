@@ -19,11 +19,11 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let colections of colection$ |async" (click)="onEditi(colections.id)">
-            <td><strong>{{colections.id}}</strong></td>
-            <td>{{colections.nome}}</td>
-            <td>{{colections.estacao}}-{{colections.anoLancamento}}</td>
-            <td>{{colections.responsavel}}</td>
+          <tr *ngFor="let collections of collection$ |async" (click)="onEditi(collections.id)">
+            <td><strong>{{collections.id}}</strong></td>
+            <td>{{collections.name}}</td>
+            <td>{{collections.station}}-{{collections.releaseYear}}</td>
+            <td>{{collections.responsible}}</td>
           </tr>
         </tbody>
       </table>

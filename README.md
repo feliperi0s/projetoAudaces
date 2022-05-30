@@ -21,7 +21,9 @@
 
 ## Como rodar a aplicação
 
-Faça o clone via github, você terá que ter o Angular CLI instalado em sua maquina e o plugin json-server. Rodar no terminal o comando NG SERVE para rodar a aplicação e json-server --watch db.json, para rodar a fakeAPI.
+Inicialmente você tera que ter o NodeJS instalado,e depois instalar o json-server (npm install -g json-server) globalmente.
+
+Faça o clone via github, você terá que ter o Angular CLI (npm install -g @angular/cli) instalado em sua maquina. Rodar no terminal o comando ng serve para rodar a aplicação e json-server --watch db.json, para rodar a fakeAPI.
 
 ## Exemplo da Aplicação
 <img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo01.PNG?raw=true' alt='Exemplo'>

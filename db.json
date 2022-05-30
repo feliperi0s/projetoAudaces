@@ -2,131 +2,131 @@
   "modelos": [
     {
       "id": 7,
-      "nome": "sandalha",
-      "responsavel": "vanessa",
-      "tipo": "calçados",
-      "colecao": "Verão",
-      "bordado": "yes",
-      "estampa": "yes"
+      "name": "sandalha",
+      "responsible": "vanessa",
+      "type": "calçados",
+      "collection": "Verão",
+      "embroidery": "yes",
+      "patterned": "yes"
     },
     {
       "id": 8,
-      "nome": "bone",
-      "responsavel": "thiago",
-      "tipo": "boné",
-      "colecao": "Coleção 2",
-      "bordado": "yes",
-      "estampa": "no"
+      "name": "bone",
+      "responsible": "thiago",
+      "type": "boné",
+      "collection": "Coleção 2",
+      "embroidery": "yes",
+      "patterned": "no"
     },
     {
       "id": 9,
-      "nome": "saias",
-      "responsavel": "vanessa",
-      "tipo": "saia",
-      "colecao": "Verão",
-      "bordado": "yes",
-      "estampa": "yes"
+      "name": "saias",
+      "responsible": "vanessa",
+      "type": "saia",
+      "collection": "Verão",
+      "embroidery": "yes",
+      "patterned": "yes"
     },
     {
       "id": 10,
-      "nome": "calça",
-      "responsavel": "vanessa",
-      "tipo": "calça",
-      "colecao": "Coleção 1",
-      "bordado": "yes",
-      "estampa": "no"
+      "name": "calça",
+      "responsible": "vanessa",
+      "type": "calça",
+      "collection": "Coleção 1",
+      "embroidery": "yes",
+      "patterned": "no"
     },
     {
       "id": 11,
-      "nome": "Bermuda",
-      "responsavel": "Felipe",
-      "tipo": "bermuda",
-      "colecao": "Coleção 2",
-      "bordado": "no",
-      "estampa": "no"
+      "name": "Bermuda",
+      "responsible": "Felipe",
+      "type": "bermuda",
+      "collection": "Coleção 2",
+      "embroidery": "no",
+      "patterned": "no"
     },
     {
       "id": 12,
-      "nome": "Chapéu de palha",
-      "responsavel": "Thiago",
-      "tipo": "boné",
-      "colecao": "Verão",
-      "bordado": "yes",
-      "estampa": "yes"
+      "name": "Chapéu de palha",
+      "responsible": "Thiago",
+      "type": "boné",
+      "collection": "Verão",
+      "embroidery": "yes",
+      "patterned": "yes"
     },
     {
       "id": 13,
-      "nome": "Calção",
-      "responsavel": "Felipe",
-      "tipo": "bermuda",
-      "colecao": "Coleção 1",
-      "bordado": "no",
-      "estampa": "yes"
+      "name": "Calção",
+      "responsible": "Felipe",
+      "type": "bermuda",
+      "collection": "Coleção 1",
+      "embroidery": "no",
+      "patterned": "yes"
     }
   ],
   "colecoes": [
     {
       "id": 1,
-      "nome": "Coleção 1",
-      "estacao": "Verão",
-      "responsavel": "Felipe",
-      "marca": "nike",
-      "anoLancamento": 2022,
-      "orcamento": 20000
+      "name": "Coleção 1",
+      "station": "Verão",
+      "responsible": "Felipe",
+      "brand": "nike",
+      "releaseYear": 2022,
+      "budget": 20000
     },
     {
       "id": 2,
-      "nome": "Coleção 2",
-      "estacao": "inverno",
-      "responsavel": "Thiago",
-      "marca": "Adidas",
-      "anoLancamento": 2022,
-      "orcamento": 45000
+      "name": "Coleção 2",
+      "station": "inverno",
+      "responsible": "Thiago",
+      "brand": "Adidas",
+      "releaseYear": 2022,
+      "budget": 45000
     },
     {
       "id": 3,
-      "nome": "Coleção 3",
-      "estacao": "Primavera",
-      "responsavel": "Pedro",
-      "marca": "Renner",
-      "anoLancamento": 2023,
-      "orcamento": 37000
+      "name": "Coleção 3",
+      "station": "Primavera",
+      "responsible": "Pedro",
+      "brand": "Renner",
+      "releaseYear": 2023,
+      "budget": 37000
     },
     {
       "id": 4,
-      "nome": "Inverno",
-      "estacao": "Inverno",
-      "responsavel": "Vanessa",
-      "marca": "Adidas",
-      "anoLancamento": 2023,
-      "orcamento": 17000
+      "name": "Inverno",
+      "station": "Inverno",
+      "responsible": "Vanessa",
+      "brand": "Adidas",
+      "releaseYear": 2023,
+      "budget": 17000
     },
     {
       "id": 5,
-      "nome": "Verão",
-      "estacao": "Verão",
-      "responsavel": "João",
-      "marca": "Renner",
-      "anoLancamento": 2024,
-      "orcamento": 5000
+      "name": "Verão",
+      "station": "Verão",
+      "responsible": "João",
+      "brand": "Renner",
+      "releaseYear": 2024,
+      "budget": 5000
     },
     {
       "id": 6,
-      "nome": "Primavera",
-      "estacao": "Primavera",
-      "responsavel": "Felipe",
-      "marca": "Nike",
-      "anoLancamento": 2023,
-      "orcamento": 15000
+      "name": "Primavera",
+      "station": "Primavera",
+      "responsible": "Felipe",
+      "brand": "Nike",
+      "releaseYear": 2023,
+      "budget": 15000
     },
     {
       "id": 7,
-      "nome": "Outono Inverno",
-      "estacao": "Outono Inverno",
-      "responsavel": "Vanessa",
-      "marca": "renner",
-      "anoLancamento": 2024,
-      "orcamento": 27000
+      "name": "Outono Inverno",
+      "station": "Outono Inverno",
+      "responsible": "Vanessa",
+      "brand": "renner",
+      "releaseYear": 2024,
+      "budget": 27000
     }
   ]
 }

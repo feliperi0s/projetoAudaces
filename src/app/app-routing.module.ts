@@ -1,113 +1,73 @@
 import { ContentComponent } from './components/content/content.component';
 import { HomeComponent } from './components/home/home.component';
-import { EsqueciSenhaComponent } from './components/esqueci-senha/esqueci-senha.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { LoginComponent } from './components/login/login.component';
-import { ModelosFormComponent } from './components/modelos-form/modelos-form.component';
-import { ModelosComponent } from './components/modelos/modelos.component';
-import { ColecaoFormComponent } from './components/colecao-form/colecao-form.component';
-import { ColecaoComponent } from './components/colecao/colecao.component';
+import { ModelsFormComponent } from './components/models-form/models-form.component';
+import { ModelsComponent } from './components/models/models.component';
+import { CollectionFormComponent } from './components/collection-form/collection-form.component';
+import { ColecaoComponent } from './components/collection/collection.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './components/nav/nav.component';
-import { ColecaoValorComponent } from './components/colecao-valor/colecao-valor.component';
+import { CollectionValueComponent } from './components/collection-value/collection-value.component';
 
 const routes: Routes = [
 
   {
-    path:'',
-    component:LoginComponent
+    path: '',
+    component: LoginComponent
   },
 
   {
-    path:'esqueciSenha',
-    component:EsqueciSenhaComponent
+    path: 'esqueciSenha',
+    component: ResetPasswordComponent
   },
 
   {
-    path:'logado',
-    component:ContentComponent,
-    children : [
+    path: 'logado',
+    component: ContentComponent,
+    children: [
       {
-        path:'home',
-        component:HomeComponent
+        path: 'home',
+        component: HomeComponent
       },
-    
+
       {
-        path:'nav',
-        component:NavComponent
+        path: 'nav',
+        component: NavComponent
       },
-    
+
       {
-        path:'colecao',
-        component:ColecaoComponent
-      },
-      {
-        path:'novaColecao',
-        component:ColecaoFormComponent
+        path: 'colecao',
+        component: ColecaoComponent
       },
       {
-        path:'editarColecao/:id',
-        component:ColecaoFormComponent
+        path: 'novaColecao',
+        component: CollectionFormComponent
       },
       {
-        path:'modelos',
-        component:ModelosComponent
+        path: 'editarColecao/:id',
+        component: CollectionFormComponent
       },
       {
-        path:'novoModelo',
-        component:ModelosFormComponent
+        path: 'modelos',
+        component: ModelsComponent
       },
       {
-        path:'editarModelo/:id',
-        component:ModelosFormComponent
+        path: 'novoModelo',
+        component: ModelsFormComponent
       },
-    
       {
-        path:'colecaovalor',
-        component:ColecaoValorComponent
+        path: 'editarModelo/:id',
+        component: ModelsFormComponent
+      },
+
+      {
+        path: 'colecaovalor',
+        component: CollectionValueComponent
       }
     ]
   },
-
-  // {
-  //   path:'home',
-  //   component:HomeComponent
-  // },
-
-  // {
-  //   path:'nav',
-  //   component:NavComponent
-  // },
-
-  // {
-  //   path:'colecao',
-  //   component:ColecaoComponent
-  // },
-  // {
-  //   path:'novaColecao',
-  //   component:ColecaoFormComponent
-  // },
-  // {
-  //   path:'editarColecao/:id',
-  //   component:ColecaoFormComponent
-  // },
-  // {
-  //   path:'modelos',
-  //   component:ModelosComponent
-  // },
-  // {
-  //   path:'novoModelo',
-  //   component:ModelosFormComponent
-  // },
-  // {
-  //   path:'editarModelo/:id',
-  //   component:ModelosFormComponent
-  // },
-
-  // {
-  //   path:'colecaovalor',
-  //   component:ColecaoValorComponent
-  // }
 
 ];
 

@@ -21,9 +21,9 @@
         <tbody>
           <tr *ngFor="let model of models$ | async" (click)="onEditi(model.id)">
             <td><strong>{{model.id}}</strong></td>
-            <td>{{model.nome}}</td>
-            <td>{{model.colecao}}</td>
-            <td>{{model.responsavel}}</td>
+            <td>{{model.name}}</td>
+            <td>{{model.collection}}</td>
+            <td>{{model.responsible}}</td>
           </tr>
         </tbody>
       </table>

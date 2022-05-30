@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <td scope="col">ColecaoID</td>
+      <td scope="col">Nome da Colecão</td>
+      <td scope="col">Orçamento</td>
+      <td scope="col">Responsável</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let collections of collection$.slice(0,5)">
+      <td id="id">{{collections.id}}</td>
+      <td class="weak">{{collections.name}}</td>
+      <td class="weak">{{collections.budget | currency:'BRL'}}</td>
+      <td class="weak">{{collections.responsible}}</td>
+    </tr>
+  </tbody>
+</table>

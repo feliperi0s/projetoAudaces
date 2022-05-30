@@ -26,12 +26,12 @@ Inicialmente você tera que ter o NodeJS instalado,e depois instalar o json-serv
 Faça o clone via github, você terá que ter o Angular CLI (npm install -g @angular/cli) instalado em sua maquina. Rodar no terminal o comando ng serve para rodar a aplicação e json-server --watch db.json, para rodar a fakeAPI.
 
 ## Exemplo da Aplicação
-<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo01.PNG?raw=true' alt='Exemplo'>
-<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo02.PNG?raw=true' alt='Exemplo'>
-<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo03.PNG?raw=true' alt='Exemplo'>
-<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo04.PNG?raw=true' alt='Exemplo'>
-<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo05.PNG?raw=true' alt='Exemplo'>
-<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/exemplos/exemplo06.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/examples/exemplo01.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/examples/exemplo02.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/examples/exemplo03.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/examples/exemplo04.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/examples/exemplo05.PNG?raw=true' alt='Exemplo'>
+<img src='https://github.com/feliperi0s/projetoAudaces/blob/master/examples/exemplo06.PNG?raw=true' alt='Exemplo'>
 
 Todo feedback é bem-vindo. 
 
